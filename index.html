@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi Yoshio | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000000;
+      --bg-soft: #0b0b0b;
+      --card: #111111;
+      --line: rgba(255,255,255,0.08);
+      --line-strong: rgba(255,255,255,0.18);
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.68);
+      --muted-2: rgba(255,255,255,0.42);
+      --shadow: 0 30px 80px rgba(0,0,0,0.45);
+      --radius: 28px;
+      --max: 1280px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.06), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(255,255,255,0.04), transparent 18%),
+        var(--bg);
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: white;
+      color: black;
+    }
+
+    .noise,
+    .grid,
+    .spotlight {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .grid {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at center, black 32%, transparent 82%);
+      opacity: 0.18;
+    }
+
+    .spotlight {
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255,255,255,0.08), transparent 22%),
+        radial-gradient(circle at 85% 80%, rgba(255,255,255,0.06), transparent 22%);
+      filter: blur(20px);
+      opacity: 0.8;
+    }
+
+    .noise {
+      opacity: 0.04;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.9) 0.6px, transparent 0.7px);
+      background-size: 14px 14px;
+    }
+
+    .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: rgba(255,255,255,0.06);
+      z-index: 100;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: white;
+      transform-origin: left;
+      transition: width 0.15s linear;
+    }
+
+    .nav {
+      position: fixed;
+      top: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 90;
+      width: min(96vw, 1180px);
+      max-width: calc(100vw - 24px);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(0,0,0,0.62);
+      backdrop-filter: blur(18px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .nav-brand {
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      flex: 1;
+      min-width: 0;
+      padding-bottom: 2px;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 8px 12px;
+      transition: 0.3s ease;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: white;
+      border-color: var(--line-strong);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .deck {
+      position: relative;
+      z-index: 1;
+      scroll-snap-type: y mandatory;
+    }
+
+    .slide {
+      min-height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 28px 56px;
+      position: relative;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .slide-inner {
+      width: 100%;
+      max-width: var(--max);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .slide.compact .slide-inner {
+      grid-template-columns: 1fr;
+      max-width: 1100px;
+    }
+
+    .content,
+    .visual,
+    .project-card,
+    .contact-card,
+    .hero-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .content,
+    .hero-card,
+    .contact-card {
+      padding: clamp(28px, 4vw, 48px);
+    }
+
+    .hero-card {
+      min-height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before,
+    .visual::before,
+    .project-card::before,
+    .contact-card::before,
+    .content::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(255,255,255,0.08), transparent 26%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      padding: 9px 14px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.03);
+    }
+
+    h1, h2, h3 {
+      letter-spacing: -0.05em;
+      line-height: 0.96;
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 9vw, 8rem);
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 5vw, 4.6rem);
+      margin-bottom: 16px;
+      max-width: 760px;
+    }
+
+    h3 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      max-width: 840px;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.45vw, 1.25rem);
+      line-height: 1.75;
+    }
+
+    .lead {
+      font-size: clamp(1.08rem, 1.7vw, 1.38rem);
+      color: rgba(255,255,255,0.88);
+      line-height: 1.65;
+      max-width: 760px;
+    }
+
+    .actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      text-decoration: none;
+      color: white;
+      border: 1px solid var(--line-strong);
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: white;
+      color: black;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .content {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .slide-index {
+      position: absolute;
+      top: 26px;
+      right: 28px;
+      color: rgba(255,255,255,0.16);
+      font-weight: 800;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      letter-spacing: -0.06em;
+    }
+
+    .visual {
+      min-height: 560px;
+      position: relative;
+      overflow: hidden;
+      padding: 18px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .media-frame {
+      border-radius: 22px;
+      overflow: hidden;
+      width: 100%;
+      min-height: 100%;
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015)),
+        #080808;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .media-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: contrast(1.05);
+      transform: scale(1.02);
+      transition: transform 0.8s ease;
+    }
+
+    .media-frame:hover img {
+      transform: scale(1.06);
+    }
+
+    .media-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.55) 100%);
+    }
+
+    .media-label {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      z-index: 2;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.46);
+      backdrop-filter: blur(12px);
+      padding: 11px 14px;
+      border-radius: 16px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.78);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 1100px;
+      margin: 0 auto 20px;
+      padding: 0 4px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+      width: 100%;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      display: grid;
+      grid-template-rows: 280px auto;
+      gap: 18px;
+    }
+
+    .project-image {
+      border-radius: 22px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0a0a0a;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: contrast(1.05);
+      transition: transform 0.7s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.06);
+    }
+
+    .project-body {
+      padding: 6px 6px 10px;
+    }
+
+    .project-kicker {
+      color: var(--muted-2);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-bottom: 10px;
+    }
+
+    .project-body h3 {
+      margin-bottom: 12px;
+    }
+
+    .project-body p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .skill {
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: rgba(255,255,255,0.84);
+      background: rgba(255,255,255,0.02);
+      font-size: 0.92rem;
+    }
+
+    .quote {
+      margin-top: 22px;
+      padding-left: 18px;
+      border-left: 2px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.88);
+      line-height: 1.8;
+      max-width: 700px;
+      font-size: 1.04rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      width: 100%;
+    }
+
+    .contact-card {
+      min-height: 420px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .contact-item span {
+      color: var(--muted-2);
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .contact-item a,
+    .contact-item strong {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      word-break: break-word;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(38px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+      will-change: opacity, transform;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1080px) {
+      .slide-inner,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .visual,
+      .content,
+      .hero-card,
+      .contact-card {
+        min-height: 440px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        top: 12px;
+        padding: 10px 12px;
+        border-radius: 24px;
+        align-items: stretch;
+        flex-direction: column;
+        width: min(96vw, 96vw);
+      }
+
+      .nav-brand {
+        padding-left: 4px;
+      }
+
+      .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 4px;
+      }
+
+      .slide {
+        padding: 132px 16px 34px;
+        min-height: auto;
+      }
+
+      .hero-card,
+      .content,
+      .contact-card {
+        padding: 22px;
+      }
+
+      .visual,
+      .project-card {
+        padding: 14px;
+      }
+
+      .project-card {
+        grid-template-rows: 220px auto;
+      }
+
+      .button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+  <div class="grid"></div>
+  <div class="spotlight"></div>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <div class="nav-brand">Davi Yoshio</div>
+    <nav class="nav-links">
+      <a href="#intro">Início</a>
+      <a href="#origem">Origem</a>
+      <a href="#operacao">Operação</a>
+      <a href="#lideranca">Liderança</a>
+      <a href="#virada">Virada</a>
+      <a href="#academico">Acadêmico</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#conquistas">Conquistas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="deck">
+    <section class="slide" id="intro">
+      <div class="slide-inner">
+        <div class="hero-card reveal">
+          <span class="eyebrow">Portfólio · storytelling profissional</span>
+          <h1>Davi Yoshio</h1>
+          <p class="lead">
+            Dados, tecnologia, negócios e execução. Uma trajetória construída da operação ao pensamento estratégico, transformada aqui em uma experiência visual limpa, minimalista e profissional.
+          </p>
+          <div class="meta-row">
+            <span class="pill">Ciência de Dados & IA</span>
+            <span class="pill">Produto & E-commerce</span>
+            <span class="pill">Análise & Execução</span>
+          </div>
+          <div class="actions">
+            <a class="button" href="#origem">Explorar trajetória</a>
+            <a class="button" href="#projetos">Ver projetos</a>
+          </div>
+        </div>
+
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-intro.jpg" alt="Ambiente minimalista de trabalho com foco em tecnologia" />
+            <div class="media-overlay"></div>
+            <div class="media-label">Landing page em formato de apresentação</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="origem">
+      <div class="slide-inner">
+        <div class="content reveal">
+          <div class="slide-index">01</div>
+          <span class="eyebrow">Capítulo 1</span>
+          <h2>Minha carreira começou antes da tecnologia.</h2>
+          <p class="subtitle">
+            Começou quando eu tinha 15 anos nas vendas. Iniciei empreendendo com produtos high-end e escalei para a importação e venda de travesseiros no meu primeiro e-commerce. Foi nesse período que aprendi, na prática, a dinâmica de colocar a mão na massa e construir resultado desde a base.
+          </p>
+          <p class="quote">
+            Antes do código, veio o instinto de negócio. Antes da análise, veio a execução.
+          </p>
+        </div>
+
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-origem.jpg" alt="Ambiente de e-commerce e vendas" />
+            <div class="media-label">Vendas · Empreendedorismo · E-commerce</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="operacao">
+      <div class="slide-inner">
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-operacao.jpg" alt="Equipe e ambiente corporativo" />
+            <div class="media-overlay"></div>
+            <div class="media-label">Bastidores · Rotina empresarial · Aprendizado</div>
+          </div>
+        </div>
+
+        <div class="content reveal">
+          <div class="slide-index">02</div>
+          <span class="eyebrow">Capítulo 2</span>
+          <h2>Entrar na Yamá foi minha decisão de entender como uma empresa realmente funciona.</h2>
+          <p class="subtitle">
+            Atuei como Analista em um escritório administrativo da Yamá Cosméticos, mergulhando nas rotinas empresariais. Foi minha escola sobre faturamento, financeiro, logística e sistemas.
+          </p>
+          <p class="subtitle" style="margin-top:18px;">
+            Mais do que trabalhar em uma área específica, essa fase representou uma escolha estratégica: entender a estrutura de uma empresa por dentro, seus fluxos, suas engrenagens e como diferentes áreas se conectam para gerar resultado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="lideranca">
+      <div class="slide-inner">
+        <div class="content reveal">
+          <div class="slide-index">03</div>
+          <span class="eyebrow">Capítulo 3</span>
+          <h2>Depois de aprender a operação, assumi a frente dela.</h2>
+          <p class="subtitle">
+            Fui convidado para integrar o time de e-commerce com um objetivo claro: aprender. Entrei para entender como uma operação digital funciona em uma empresa de grande porte e participei ativamente da jornada que levou o canal do zero aos R$ 800 mil de faturamento mensal.
+          </p>
+          <p class="subtitle" style="margin-top:18px;">
+            No final de 2023, assumi a liderança da operação, passando a conduzir essa estrutura com uma visão mais estratégica sobre processos, crescimento e performance do canal.
+          </p>
+        </div>
+
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-lideranca.jpg" alt="Liderança e gestão de operação" />
+            <div class="media-overlay"></div>
+            <div class="media-label">E-commerce · Crescimento · Liderança</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="virada">
+      <div class="slide-inner">
+        <div class="content reveal">
+          <div class="slide-index">04</div>
+          <span class="eyebrow">Capítulo 4</span>
+          <h2>Foi aí que percebi que meus verdadeiros clientes eram os dados.</h2>
+          <p class="subtitle">
+            Nesse momento tive um insight: eu operava uma “loja” em que os dados eram o centro. Eu precisava atraí-los, tratá-los e fidelizá-los com inteligência, da mesma forma que fazia com consumidores.
+          </p>
+          <p class="subtitle" style="margin-top:18px;">
+            Essa virada me levou ao curso de Ciência de Dados e Inteligência Artificial no Ibmec. A decisão foi clara: unir visão de negócios com excelência técnica para transformar dados em resultado real.
+          </p>
+        </div>
+
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-virada.jpg" alt="Pessoa apresentando tecnologia e dados" />
+            <div class="media-overlay"></div>
+            <div class="media-label">Insight · Dados · Direção de carreira</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="academico">
+      <div class="slide-inner">
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-academico.jpg" alt="Grupo acadêmico em ambiente colaborativo" />
+            <div class="media-overlay"></div>
+            <div class="media-label">Hackathons · Comunidade · Protagonismo</div>
+          </div>
+        </div>
+
+        <div class="content reveal">
+          <div class="slide-index">05</div>
+          <span class="eyebrow">Capítulo 5</span>
+          <h2>Formação com participação ativa desde o início.</h2>
+          <p class="subtitle">
+            Iniciei a graduação em fevereiro de 2024, participando ativamente de hackathons e projetos práticos desde o começo. Mais do que aprender, passei a construir, apresentar e testar soluções em contextos reais.
+          </p>
+          <p class="subtitle" style="margin-top:18px;">
+            Além do envolvimento técnico, conquistei posições de destaque na comunidade acadêmica: fui selecionado como Embaixador da faculdade e ingressei na Liga Acadêmica de Tecnologia.
+          </p>
+          <div class="skills-wrap">
+            <span class="skill">Hackathons</span>
+            <span class="skill">Projetos práticos</span>
+            <span class="skill">Embaixador Ibmec</span>
+            <span class="skill">Liga Acadêmica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="conquistas">
+      <div class="slide-inner">
+        <div class="content reveal">
+          <div class="slide-index">06</div>
+          <span class="eyebrow">Capítulo 6</span>
+          <h2>Aprendizado transformado em performance.</h2>
+          <p class="subtitle">
+            Conquistei o 1º lugar no Hackathon de IA Generativa, o 3º lugar no Hackathon Green Digital Skills e também participei do Desafio Mastercard, atuando em contextos que exigiram análise, estratégia, construção de solução e apresentação de valor.
+          </p>
+          <p class="quote">
+            Meu diferencial está em unir repertório de negócio, visão analítica e capacidade real de construir soluções.
+          </p>
+        </div>
+
+        <div class="visual reveal">
+          <div class="media-frame">
+            <img src="assets/img/capitulo-conquistas.jpg" alt="Pessoa apresentando projeto em evento" />
+            <div class="media-overlay"></div>
+            <div class="media-label">1º lugar IA Generativa · 3º lugar Green Digital Skills · Mastercard</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide compact" id="projetos">
+      <div class="slide-inner">
+        <div class="section-title reveal">
+          <span class="eyebrow">Projetos em destaque</span>
+          <h2>Cases que conectam tecnologia, análise e resultado.</h2>
+          <p class="subtitle">
+            Aqui, o portfólio deixa de ser apenas narrativa e vira evidência. Cada projeto reflete uma combinação entre visão estratégica, construção técnica e aplicação prática.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+                <img src="assets/img/projeto-tatiart.jpg" alt="Interface de website e analytics" />
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Projeto 01</div>
+              <h3>Tatiart</h3>
+              <p>
+                Desenvolvimento de uma plataforma web focada em conversão de vendas, com front-end em HTML, CSS e JavaScript e back-end em Java Spring Boot. O projeto aplicou fundamentos de e-commerce para estruturar SEO, captação de leads e i18n, preparando a aplicação para múltiplos mercados.
+              </p>
+              <div class="skills-wrap">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Java Spring Boot</span>
+                <span class="skill">SEO</span>
+                <span class="skill">i18n</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+                <img src="assets/img/projeto-cittamobi.jpg" alt="Dashboard e análise de dados" />
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Projeto 02</div>
+              <h3>Projeto de Dados · Cittamobi</h3>
+              <p>
+                Análise estratégica com dados reais de acesso ao app, utilizando Python e Power BI para mapear perfil de usuário e identificar padrões de comportamento. A análise foi aprofundada com bases externas de geografia, eventos e clima, gerando insights sobre corredores de ônibus e picos de demanda.
+              </p>
+              <div class="skills-wrap">
+                <span class="skill">Python</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">Análise comportamental</span>
+                <span class="skill">Dados externos</span>
+                <span class="skill">Insights de mobilidade</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+                <img src="assets/img/projeto-aurora-viridis.jpg" alt="Projeto voltado para energia e estratégia de mercado" />
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Projeto 03</div>
+              <h3>Aurora Vives</h3>
+              <p>
+                Projeto desenvolvido no contexto do Green Digital Skills, criando uma proposta de negócio voltada ao mercado livre de energia. A Aurora Vives foi pensada como uma empresa capaz de impulsionar a venda de energia nesse mercado, conectando estratégia, inovação e visão de futuro para um setor em transformação.
+              </p>
+              <div class="skills-wrap">
+                <span class="skill">Green Digital Skills</span>
+                <span class="skill">Modelo de negócio</span>
+                <span class="skill">Mercado livre de energia</span>
+                <span class="skill">Estratégia</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+                <img src="assets/img/projeto-monevo.jpg" alt="Projeto de tecnologia financeira e organização" />
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Projeto 04</div>
+              <h3>Monevo</h3>
+              <p>
+                Projeto criado com foco em organização e inteligência aplicada ao contexto financeiro, combinando tecnologia, visão de produto e construção estratégica. A proposta nasceu para transformar complexidade em clareza, com uma solução pensada para gerar valor real a partir de dados, experiência e direcionamento.
+              </p>
+              <div class="skills-wrap">
+                <span class="skill">Produto digital</span>
+                <span class="skill">Estratégia</span>
+                <span class="skill">Finanças</span>
+                <span class="skill">Inovação</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide compact" id="contato">
+      <div class="slide-inner">
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <span class="eyebrow">Encerramento</span>
+            <h2>Vamos construir algo relevante.</h2>
+            <p class="subtitle">
+              Este portfólio é uma síntese da minha trajetória até aqui: uma combinação entre execução, estratégia, dados e construção. Se fizer sentido para o seu contexto, vamos conversar.
+            </p>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span>Telefone</span>
+                <strong>(11) 99418-9595</strong>
+              </div>
+              <div class="contact-item">
+                <span>E-mail</span>
+                <a href="mailto:daviyoshio219@gmail.com">daviyoshio219@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/daviyoshio/" target="_blank" rel="noopener noreferrer">linkedin.com/in/daviyoshio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <span class="eyebrow">Core skills</span>
+            <h3>Tecnologias e repertório</h3>
+            <div class="skills-wrap">
+              <span class="skill">Python</span>
+              <span class="skill">Power BI</span>
+              <span class="skill">SQL</span>
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Java</span>
+              <span class="skill">Spring Boot</span>
+              <span class="skill">SEO</span>
+              <span class="skill">Storytelling</span>
+              <span class="skill">Análise de dados</span>
+              <span class="skill">Visão de negócio</span>
+            </div>
+            <div class="actions" style="margin-top:32px;">
+              <a class="button" href="#intro">Voltar ao início</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    reveals.forEach((el) => observer.observe(el));
+
+    const progressBar = document.getElementById('progressBar');
+    const updateProgress = () => {
+      const scrollTop = window.scrollY;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = height > 0 ? (scrollTop / height) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    };
+
+    window.addEventListener('scroll', updateProgress);
+    updateProgress();
+
+    const links = document.querySelectorAll('.nav-links a');
+    const sections = [...links].map(link => document.querySelector(link.getAttribute('href')));
+
+    const setActiveLink = () => {
+      let current = sections[0];
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.35) current = section;
+      });
+      links.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current.id);
+      });
+    };
+
+    window.addEventListener('scroll', setActiveLink);
+    setActiveLink();
+  </script>
+</body>
+</html>
