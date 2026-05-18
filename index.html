@@ -497,6 +497,104 @@
       font-size: 1.04rem;
     }
 
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      width: 100%;
+    }
+
+    .certificate-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      display: grid;
+      grid-template-rows: 180px auto;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, border-color 0.4s ease;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--line-strong);
+    }
+
+    .certificate-image {
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #fafafa;
+    }
+
+    .certificate-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.7s ease;
+    }
+
+    .certificate-card:hover .certificate-image img {
+      transform: scale(1.05);
+    }
+
+    .certificate-body {
+      padding: 4px 6px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .certificate-issuer {
+      color: var(--muted-2);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+
+    .certificate-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      color: white;
+    }
+
+    .certificate-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .certificate-skills .skill {
+      padding: 7px 11px;
+      font-size: 0.76rem;
+    }
+
+    .certificate-link {
+      margin-top: auto;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      align-self: flex-start;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 2px;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .certificate-link:hover {
+      color: white;
+      border-color: white;
+    }
+
     .contact-grid {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
@@ -563,6 +661,10 @@
         grid-template-columns: 1fr;
       }
 
+      .certificates-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .visual,
       .content,
       .hero-card,
@@ -613,6 +715,14 @@
         grid-template-rows: 220px auto;
       }
 
+      .certificates-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .certificate-card {
+        grid-template-rows: 200px auto;
+      }
+
       .button {
         width: 100%;
         justify-content: center;
@@ -637,6 +747,7 @@
       <a href="#academico">Acadêmico</a>
       <a href="#projetos">Projetos</a>
       <a href="#conquistas">Conquistas</a>
+      <a href="#certificados">Certificados</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -907,6 +1018,197 @@
                 <span class="skill">Finanças</span>
                 <span class="skill">Inovação</span>
               </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide compact" id="certificados">
+      <div class="slide-inner">
+        <div class="section-title reveal">
+          <span class="eyebrow">Certificados</span>
+          <h2>Formação contínua em dados, IA e negócios.</h2>
+          <p class="subtitle">
+            Cada certificado representa uma camada de aprofundamento técnico ou estratégico que sustenta minha forma de trabalhar. Da engenharia de dados ao branding, passando por machine learning, qualidade de processos e desenvolvimento socioemocional.
+          </p>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/ibmec-projeto-ii.jpg" alt="Certificado Ibmec Projeto em Ciência de Dados II" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Ibmec</div>
+              <div class="certificate-title">Projeto em Ciência de Dados II · iSkills</div>
+              <div class="certificate-skills">
+                <span class="skill">Desenvolvimento socioemocional</span>
+                <span class="skill">Soft skills</span>
+                <span class="skill">Inteligência emocional</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/ibmec-projeto-ii.jpg" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/google-vertex-ai.png" alt="Certificado Google Cloud Prompt Design in Vertex AI" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Google Cloud</div>
+              <div class="certificate-title">Prompt Design in Vertex AI</div>
+              <div class="certificate-skills">
+                <span class="skill">Prompt Engineering</span>
+                <span class="skill">Vertex AI</span>
+                <span class="skill">IA Generativa</span>
+                <span class="skill">Google Cloud</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/google-vertex-ai.png" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/alura-ml-sklearn.png" alt="Certificado Alura Machine Learning com SKLearn" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Alura</div>
+              <div class="certificate-title">Machine Learning: Classificação com SKLearn</div>
+              <div class="certificate-skills">
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Classificação</span>
+                <span class="skill">Scikit-learn</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/alura-ml-sklearn.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/espm-branding.jpeg" alt="Certificado ESPM Masterclass Branding" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">ESPM</div>
+              <div class="certificate-title">Masterclass Branding Elevado à Arte · Caio Amato</div>
+              <div class="certificate-skills">
+                <span class="skill">Branding</span>
+                <span class="skill">Arquitetura de marca</span>
+                <span class="skill">Comunicação</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/espm-branding.jpeg" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/sixsigma-white-belt.jpeg" alt="Certificado Six Sigma White Belt" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">RL & Associados</div>
+              <div class="certificate-title">Six Sigma · White Belt</div>
+              <div class="certificate-skills">
+                <span class="skill">Lean Six Sigma</span>
+                <span class="skill">Melhoria de processos</span>
+                <span class="skill">Gestão da qualidade</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/sixsigma-white-belt.jpeg" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/databricks-get-started-de.png" alt="Certificado Databricks Get Started Data Engineering" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Databricks Academy</div>
+              <div class="certificate-title">Get Started with Databricks for Data Engineering</div>
+              <div class="certificate-skills">
+                <span class="skill">Databricks</span>
+                <span class="skill">Data Engineering</span>
+                <span class="skill">Lakehouse</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/databricks-get-started-de.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/databricks-devops.png" alt="Certificado Databricks DevOps Essentials" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Databricks Academy</div>
+              <div class="certificate-title">DevOps Essentials for Data Engineering</div>
+              <div class="certificate-skills">
+                <span class="skill">DevOps</span>
+                <span class="skill">CI/CD</span>
+                <span class="skill">Git</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/databricks-devops.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/databricks-spark-streaming.png" alt="Certificado Databricks Stream Processing Apache Spark" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Databricks Academy</div>
+              <div class="certificate-title">Stream Processing and Analysis with Apache Spark</div>
+              <div class="certificate-skills">
+                <span class="skill">Apache Spark</span>
+                <span class="skill">Stream Processing</span>
+                <span class="skill">Big Data</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/databricks-spark-streaming.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/databricks-asset-bundles.png" alt="Certificado Databricks Asset Bundles" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Databricks Academy</div>
+              <div class="certificate-title">Automated Deployment with Databricks Asset Bundles</div>
+              <div class="certificate-skills">
+                <span class="skill">Asset Bundles</span>
+                <span class="skill">Automação de deploy</span>
+                <span class="skill">Infraestrutura como código</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/databricks-asset-bundles.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/databricks-data-warehousing.png" alt="Certificado Databricks Data Warehousing" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Databricks Academy</div>
+              <div class="certificate-title">Data Warehousing with Databricks</div>
+              <div class="certificate-skills">
+                <span class="skill">Data Warehouse</span>
+                <span class="skill">Modelagem dimensional</span>
+                <span class="skill">SQL Analytics</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/databricks-data-warehousing.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
+            </div>
+          </article>
+
+          <article class="certificate-card reveal">
+            <div class="certificate-image">
+              <img src="assets/certificados/databricks-ai-bi.png" alt="Certificado Databricks AI/BI for Data Analysts" />
+            </div>
+            <div class="certificate-body">
+              <div class="certificate-issuer">Databricks Academy</div>
+              <div class="certificate-title">AI/BI for Data Analysts</div>
+              <div class="certificate-skills">
+                <span class="skill">AI/BI</span>
+                <span class="skill">Business Intelligence</span>
+                <span class="skill">Dashboards</span>
+              </div>
+              <a class="certificate-link" href="assets/certificados/databricks-ai-bi.pdf" target="_blank" rel="noopener noreferrer">Ver certificado →</a>
             </div>
           </article>
         </div>
