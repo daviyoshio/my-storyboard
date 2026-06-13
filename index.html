@@ -281,6 +281,15 @@
       line-height: 1.75;
     }
 
+    .hero-role {
+      margin: 4px 0 18px;
+      max-width: 720px;
+      font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--muted);
+    }
+
     .lead {
       font-size: clamp(1.08rem, 1.7vw, 1.38rem);
       color: rgba(255,255,255,0.88);
@@ -494,6 +503,29 @@
     }
 
     .skills-wrap.compact .skill {
+      padding: 8px 13px;
+      font-size: 0.82rem;
+    }
+
+    .skills-group {
+      margin-top: 22px;
+    }
+
+    .skills-group-label {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--muted-2);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+    }
+
+    .skills-group .skills-wrap {
+      margin-top: 0;
+      gap: 9px;
+    }
+
+    .skills-group .skill {
       padding: 8px 13px;
       font-size: 0.82rem;
     }
@@ -891,8 +923,9 @@
         <div class="hero-card reveal">
           <span class="eyebrow" data-i18n="intro.eyebrow">Portfólio · storytelling profissional</span>
           <h1 data-i18n="intro.title">Davi Yoshio</h1>
+          <p class="hero-role" data-i18n="intro.role">Ciência de Dados, IA & BI aplicados a negócio — da operação à decisão.</p>
           <p class="lead" data-i18n="intro.lead">
-            Dados, tecnologia, negócios e execução. Uma trajetória construída da operação ao pensamento estratégico, transformada aqui em uma experiência visual limpa, minimalista e profissional.
+            Dados, tecnologia e negócio. Uma trajetória que vai da operação de e-commerce à Ciência de Dados e IA — contada aqui como um storyboard.
           </p>
           <div class="meta-row">
             <span class="pill" data-i18n="intro.pill1">Ciência de Dados & IA</span>
@@ -902,6 +935,7 @@
           <div class="actions">
             <a class="button" href="#origem" data-i18n="intro.cta1">Explorar trajetória</a>
             <a class="button" href="#projetos" data-i18n="intro.cta2">Ver projetos</a>
+            <a class="button" href="assets/cv-davi-yoshio.pdf" target="_blank" rel="noopener noreferrer" data-i18n="contato.downloadCV">Baixar CV (PDF)</a>
           </div>
         </div>
 
@@ -922,7 +956,7 @@
           <span class="eyebrow" data-i18n="origem.eyebrow">Capítulo 1</span>
           <h2 data-i18n="origem.title">Minha carreira começou antes da tecnologia.</h2>
           <p class="subtitle" data-i18n="origem.body">
-            Começou quando eu tinha 15 anos nas vendas. Iniciei empreendendo com produtos high-end e escalei para a importação e venda de travesseiros no meu primeiro e-commerce. Foi nesse período que aprendi, na prática, a dinâmica de colocar a mão na massa e construir resultado desde a base.
+            Começou quando eu tinha 15 anos nas vendas. Iniciei empreendendo com produtos high-end e escalei para a importação e venda de travesseiros no meu primeiro e-commerce. Foi nesse período que aprendi, na prática, a dinâmica de colocar a mão na massa e gerar receita desde a base.
           </p>
           <p class="quote" data-i18n="origem.quote">
             Antes do código, veio o instinto de negócio. Antes da análise, veio a execução.
@@ -956,7 +990,7 @@
             Atuei como Analista em um escritório administrativo da Yamá Cosméticos, mergulhando nas rotinas empresariais. Foi minha escola sobre faturamento, financeiro, logística e sistemas.
           </p>
           <p class="subtitle" style="margin-top:18px;" data-i18n="operacao.body2">
-            Mais do que trabalhar em uma área específica, essa fase representou uma escolha estratégica: entender a estrutura de uma empresa por dentro, seus fluxos, suas engrenagens e como diferentes áreas se conectam para gerar resultado.
+            Mais do que trabalhar em uma área específica, essa fase foi uma decisão consciente: entender a estrutura de uma empresa por dentro, seus fluxos, suas engrenagens e como diferentes áreas se conectam para gerar resultado.
           </p>
         </div>
       </div>
@@ -969,10 +1003,10 @@
           <span class="eyebrow" data-i18n="lideranca.eyebrow">Capítulo 3</span>
           <h2 data-i18n="lideranca.title">Depois de aprender a operação, assumi a frente dela.</h2>
           <p class="subtitle" data-i18n="lideranca.body1">
-            Fui convidado para integrar o time de e-commerce com um objetivo claro: aprender. Entrei para entender como uma operação digital funciona em uma empresa de grande porte e participei liderando ativamente da jornada que levou o canal do R$800 mil aos R$1.4 milhões de faturamento mensal.
+            Fui convidado para integrar o time de e-commerce com um objetivo claro: aprender. Entrei para entender como uma operação digital funciona em uma empresa de grande porte e participei ativamente da operação que cresceu do zero a R$ 800 mil de faturamento mensal.
           </p>
           <p class="subtitle" style="margin-top:18px;" data-i18n="lideranca.body2">
-            No final de 2023, assumi a liderança da operação, passando a conduzir essa estrutura com uma visão mais estratégica sobre processos, crescimento e performance do canal.
+            No fim de 2023, assumi a liderança do canal e conduzi o crescimento da operação de R$ 800 mil a R$ 1,4 milhão por mês, à frente de processos, performance e expansão.
           </p>
         </div>
 
@@ -1047,10 +1081,10 @@
           <span class="eyebrow" data-i18n="conquistas.eyebrow">Capítulo 6</span>
           <h2 data-i18n="conquistas.title">Aprendizado transformado em performance.</h2>
           <p class="subtitle" data-i18n="conquistas.body">
-            Conquistei o 1º lugar no Hackathon de IA Generativa, o 3º lugar no Hackathon Green Digital Skills e também participei do Desafio Mastercard, atuando em contextos que exigiram análise, estratégia, construção de solução e apresentação de valor.
+            Conquistei o 1º lugar no Hackathon de IA Generativa e o 3º lugar no Green Digital Skills, além de participar do Desafio Mastercard. Em cada um, parti do problema de negócio à solução apresentada à banca.
           </p>
           <p class="quote" data-i18n="conquistas.quote">
-            Meu diferencial está em unir repertório de negócio, visão analítica e capacidade real de construir soluções.
+            Meu diferencial está em unir repertório de negócio, visão analítica e capacidade de transformar análise em solução.
           </p>
         </div>
 
@@ -1105,7 +1139,7 @@
           <span class="eyebrow" data-i18n="projetos.eyebrow">Projetos em destaque</span>
           <h2 data-i18n="projetos.title">Cases que conectam tecnologia, análise e resultado.</h2>
           <p class="subtitle" data-i18n="projetos.intro">
-            Aqui, o portfólio deixa de ser apenas narrativa e vira evidência. Cada projeto reflete uma combinação entre visão estratégica, construção técnica e aplicação prática.
+            Aqui, o portfólio deixa de ser apenas narrativa e vira evidência. Cada projeto reflete uma combinação entre visão de negócio, execução técnica e dados.
           </p>
         </div>
 
@@ -1159,13 +1193,13 @@
               <div class="project-kicker" data-i18n="projetos.aurora.kicker">Projeto 03</div>
               <h3 data-i18n="projetos.aurora.title">Aurora Viridis</h3>
               <p data-i18n="projetos.aurora.body">
-                Projeto desenvolvido no contexto do Green Digital Skills, criando uma proposta de negócio voltada ao mercado livre de energia. A Aurora Viridis foi pensada como uma empresa capaz de impulsionar a venda de energia nesse mercado, conectando estratégia, inovação e visão de futuro para um setor em transformação.
+                Proposta de negócio desenvolvida no Green Digital Skills para o mercado livre de energia: modelei o conceito de uma empresa para impulsionar a venda de energia nesse mercado, unindo leitura de oportunidade, modelo de negócio e a visão de um setor em transformação.
               </p>
               <div class="skills-wrap">
                 <span class="skill">Green Digital Skills</span>
                 <span class="skill" data-i18n="projetos.aurora.skill2">Modelo de negócio</span>
                 <span class="skill" data-i18n="projetos.aurora.skill3">Mercado livre de energia</span>
-                <span class="skill" data-i18n="projetos.aurora.skill4">Estratégia</span>
+                <span class="skill" data-i18n="projetos.aurora.skill4">Pitch</span>
               </div>
             </div>
           </article>
@@ -1178,13 +1212,13 @@
               <div class="project-kicker" data-i18n="projetos.monevo.kicker">Projeto 04</div>
               <h3 data-i18n="projetos.monevo.title">Monevo</h3>
               <p data-i18n="projetos.monevo.body">
-                Projeto criado com foco em organização e inteligência aplicada ao contexto financeiro, combinando tecnologia, visão de produto e construção estratégica. A proposta nasceu para transformar complexidade em clareza, com uma solução pensada para gerar valor real a partir de dados, experiência e direcionamento.
+                Conceito de produto voltado à organização financeira pessoal: estruturei a proposta de uma solução que transforma complexidade em clareza para o usuário — do problema à proposta de valor.
               </p>
               <div class="skills-wrap">
-                <span class="skill" data-i18n="projetos.monevo.skill1">Produto digital</span>
-                <span class="skill" data-i18n="projetos.monevo.skill2">Estratégia</span>
-                <span class="skill" data-i18n="projetos.monevo.skill3">Finanças</span>
-                <span class="skill" data-i18n="projetos.monevo.skill4">Inovação</span>
+                <span class="skill" data-i18n="projetos.monevo.skill1">Conceito de produto</span>
+                <span class="skill" data-i18n="projetos.monevo.skill2">Fintech</span>
+                <span class="skill" data-i18n="projetos.monevo.skill3">Finanças pessoais</span>
+                <span class="skill" data-i18n="projetos.monevo.skill4">Proposta de valor</span>
               </div>
             </div>
           </article>
@@ -1396,7 +1430,7 @@
             <span class="eyebrow" data-i18n="contato.eyebrow">Encerramento</span>
             <h2 data-i18n="contato.title">Vamos construir algo relevante.</h2>
             <p class="subtitle" data-i18n="contato.body">
-              Este portfólio é uma síntese da minha trajetória até aqui: uma combinação entre execução, estratégia, dados e construção. Se fizer sentido para o seu contexto, vamos conversar.
+              Este portfólio é uma síntese da minha trajetória até aqui: uma combinação entre dados, tecnologia, execução e visão de negócio. Se fizer sentido para o seu contexto, vamos conversar.
             </p>
             <div class="contact-list">
               <div class="contact-item">
@@ -1417,22 +1451,46 @@
           <div class="contact-card reveal">
             <span class="eyebrow" data-i18n="contato.skillsEyebrow">Core skills</span>
             <h3 data-i18n="contato.skillsTitle">Tecnologias e repertório</h3>
-            <div class="skills-wrap">
-              <span class="skill">Python</span>
-              <span class="skill">Power BI</span>
-              <span class="skill">Marketing</span>
-              <span class="skill">SQL</span>
-              <span class="skill">HTML</span>
-              <span class="skill">CSS</span>
-              <span class="skill">JavaScript</span>
-              <span class="skill">Java</span>
-              <span class="skill">Spring Boot</span>
-              <span class="skill">SEO</span>
-              <span class="skill">Storytelling</span>
-              <span class="skill">Análise de dados</span>
-              <span class="skill">Visão de negócio</span>
+
+            <div class="skills-group">
+              <span class="skills-group-label" data-i18n="skills.group1">Dados & IA</span>
+              <div class="skills-wrap">
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Power BI</span>
+                <span class="skill" data-i18n="skills.dataAnalysis">Análise de dados</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">LLMs &amp; RAG</span>
+                <span class="skill">LangChain</span>
+              </div>
             </div>
-            <div class="actions" style="margin-top:32px;">
+
+            <div class="skills-group">
+              <span class="skills-group-label" data-i18n="skills.group2">Engenharia & Dev</span>
+              <div class="skills-wrap">
+                <span class="skill">Databricks</span>
+                <span class="skill">Java</span>
+                <span class="skill">Spring Boot</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <span class="skills-group-label" data-i18n="skills.group3">Negócio & Comunicação</span>
+              <div class="skills-wrap">
+                <span class="skill">E-commerce</span>
+                <span class="skill">BI &amp; Analytics</span>
+                <span class="skill">Storytelling</span>
+                <span class="skill" data-i18n="skills.businessVision">Visão de negócio</span>
+                <span class="skill">SEO</span>
+                <span class="skill">Marketing</span>
+              </div>
+            </div>
+
+            <div class="actions" style="margin-top:28px;">
+              <a class="button" href="assets/cv-davi-yoshio.pdf" target="_blank" rel="noopener noreferrer" data-i18n="contato.downloadCV">Baixar CV (PDF)</a>
               <a class="button" href="#intro" data-i18n="contato.backToTop">Voltar ao início</a>
             </div>
           </div>

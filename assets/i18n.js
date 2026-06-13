@@ -20,7 +20,8 @@
 
       'intro.eyebrow': 'Portfólio · storytelling profissional',
       'intro.title': 'Davi Yoshio',
-      'intro.lead': 'Dados, tecnologia, negócios e execução. Uma trajetória construída da operação ao pensamento estratégico, transformada aqui em uma experiência visual limpa, minimalista e profissional.',
+      'intro.role': 'Ciência de Dados, IA & BI aplicados a negócio — da operação à decisão.',
+      'intro.lead': 'Dados, tecnologia e negócio. Uma trajetória que vai da operação de e-commerce à Ciência de Dados e IA — contada aqui como um storyboard.',
       'intro.pill1': 'Ciência de Dados & IA',
       'intro.pill2': 'Produto & E-commerce',
       'intro.pill3': 'Análise & Execução',
@@ -30,20 +31,20 @@
 
       'origem.eyebrow': 'Capítulo 1',
       'origem.title': 'Minha carreira começou antes da tecnologia.',
-      'origem.body': 'Começou quando eu tinha 15 anos nas vendas. Iniciei empreendendo com produtos high-end e escalei para a importação e venda de travesseiros no meu primeiro e-commerce. Foi nesse período que aprendi, na prática, a dinâmica de colocar a mão na massa e construir resultado desde a base.',
+      'origem.body': 'Começou quando eu tinha 15 anos nas vendas. Iniciei empreendendo com produtos high-end e escalei para a importação e venda de travesseiros no meu primeiro e-commerce. Foi nesse período que aprendi, na prática, a dinâmica de colocar a mão na massa e gerar receita desde a base.',
       'origem.quote': 'Antes do código, veio o instinto de negócio. Antes da análise, veio a execução.',
       'origem.label': 'Vendas · Empreendedorismo · E-commerce',
 
       'operacao.eyebrow': 'Capítulo 2',
       'operacao.title': 'Entrar na Yamá foi minha decisão de entender como uma empresa realmente funciona.',
       'operacao.body1': 'Atuei como Analista em um escritório administrativo da Yamá Cosméticos, mergulhando nas rotinas empresariais. Foi minha escola sobre faturamento, financeiro, logística e sistemas.',
-      'operacao.body2': 'Mais do que trabalhar em uma área específica, essa fase representou uma escolha estratégica: entender a estrutura de uma empresa por dentro, seus fluxos, suas engrenagens e como diferentes áreas se conectam para gerar resultado.',
+      'operacao.body2': 'Mais do que trabalhar em uma área específica, essa fase foi uma decisão consciente: entender a estrutura de uma empresa por dentro, seus fluxos, suas engrenagens e como diferentes áreas se conectam para gerar resultado.',
       'operacao.label': 'Bastidores · Rotina empresarial · Aprendizado',
 
       'lideranca.eyebrow': 'Capítulo 3',
       'lideranca.title': 'Depois de aprender a operação, assumi a frente dela.',
-      'lideranca.body1': 'Fui convidado para integrar o time de e-commerce com um objetivo claro: aprender. Entrei para entender como uma operação digital funciona em uma empresa de grande porte e participei ativamente da jornada que levou o canal do zero aos R$ 800 mil de faturamento mensal.',
-      'lideranca.body2': 'No final de 2023, assumi a liderança da operação, passando a conduzir essa estrutura com uma visão mais estratégica sobre processos, crescimento e performance do canal.',
+      'lideranca.body1': 'Fui convidado para integrar o time de e-commerce com um objetivo claro: aprender. Entrei para entender como uma operação digital funciona em uma empresa de grande porte e participei ativamente da operação que cresceu do zero a R$ 800 mil de faturamento mensal.',
+      'lideranca.body2': 'No fim de 2023, assumi a liderança do canal e conduzi o crescimento da operação de R$ 800 mil a R$ 1,4 milhão por mês, à frente de processos, performance e expansão.',
       'lideranca.label': 'E-commerce · Crescimento · Liderança',
 
       'virada.eyebrow': 'Capítulo 4',
@@ -64,8 +65,8 @@
 
       'conquistas.eyebrow': 'Capítulo 6',
       'conquistas.title': 'Aprendizado transformado em performance.',
-      'conquistas.body': 'Conquistei o 1º lugar no Hackathon de IA Generativa, o 3º lugar no Hackathon Green Digital Skills e também participei do Desafio Mastercard, atuando em contextos que exigiram análise, estratégia, construção de solução e apresentação de valor.',
-      'conquistas.quote': 'Meu diferencial está em unir repertório de negócio, visão analítica e capacidade real de construir soluções.',
+      'conquistas.body': 'Conquistei o 1º lugar no Hackathon de IA Generativa e o 3º lugar no Green Digital Skills, além de participar do Desafio Mastercard. Em cada um, parti do problema de negócio à solução apresentada à banca.',
+      'conquistas.quote': 'Meu diferencial está em unir repertório de negócio, visão analítica e capacidade de transformar análise em solução.',
       'conquistas.label': '1º lugar IA Generativa · 3º lugar Green Digital Skills · Mastercard',
 
       'pagbank.eyebrow': 'Capítulo 7',
@@ -76,7 +77,7 @@
 
       'projetos.eyebrow': 'Projetos em destaque',
       'projetos.title': 'Cases que conectam tecnologia, análise e resultado.',
-      'projetos.intro': 'Aqui, o portfólio deixa de ser apenas narrativa e vira evidência. Cada projeto reflete uma combinação entre visão estratégica, construção técnica e aplicação prática.',
+      'projetos.intro': 'Aqui, o portfólio deixa de ser apenas narrativa e vira evidência. Cada projeto reflete uma combinação entre visão de negócio, execução técnica e dados.',
 
       'projetos.tatiart.kicker': 'Projeto 01',
       'projetos.tatiart.title': 'Tatiart',
@@ -91,18 +92,18 @@
 
       'projetos.aurora.kicker': 'Projeto 03',
       'projetos.aurora.title': 'Aurora Viridis',
-      'projetos.aurora.body': 'Projeto desenvolvido no contexto do Green Digital Skills, criando uma proposta de negócio voltada ao mercado livre de energia. A Aurora Viridis foi pensada como uma empresa capaz de impulsionar a venda de energia nesse mercado, conectando estratégia, inovação e visão de futuro para um setor em transformação.',
+      'projetos.aurora.body': 'Proposta de negócio desenvolvida no Green Digital Skills para o mercado livre de energia: modelei o conceito de uma empresa para impulsionar a venda de energia nesse mercado, unindo leitura de oportunidade, modelo de negócio e a visão de um setor em transformação.',
       'projetos.aurora.skill2': 'Modelo de negócio',
       'projetos.aurora.skill3': 'Mercado livre de energia',
-      'projetos.aurora.skill4': 'Estratégia',
+      'projetos.aurora.skill4': 'Pitch',
 
       'projetos.monevo.kicker': 'Projeto 04',
       'projetos.monevo.title': 'Monevo',
-      'projetos.monevo.body': 'Projeto criado com foco em organização e inteligência aplicada ao contexto financeiro, combinando tecnologia, visão de produto e construção estratégica. A proposta nasceu para transformar complexidade em clareza, com uma solução pensada para gerar valor real a partir de dados, experiência e direcionamento.',
-      'projetos.monevo.skill1': 'Produto digital',
-      'projetos.monevo.skill2': 'Estratégia',
-      'projetos.monevo.skill3': 'Finanças',
-      'projetos.monevo.skill4': 'Inovação',
+      'projetos.monevo.body': 'Conceito de produto voltado à organização financeira pessoal: estruturei a proposta de uma solução que transforma complexidade em clareza para o usuário — do problema à proposta de valor.',
+      'projetos.monevo.skill1': 'Conceito de produto',
+      'projetos.monevo.skill2': 'Fintech',
+      'projetos.monevo.skill3': 'Finanças pessoais',
+      'projetos.monevo.skill4': 'Proposta de valor',
 
       'certificados.eyebrow': 'Certificados',
       'certificados.title': 'Formação contínua em dados, IA e negócios.',
@@ -113,13 +114,19 @@
 
       'contato.eyebrow': 'Encerramento',
       'contato.title': 'Vamos construir algo relevante.',
-      'contato.body': 'Este portfólio é uma síntese da minha trajetória até aqui: uma combinação entre execução, estratégia, dados e construção. Se fizer sentido para o seu contexto, vamos conversar.',
+      'contato.body': 'Este portfólio é uma síntese da minha trajetória até aqui: uma combinação entre dados, tecnologia, execução e visão de negócio. Se fizer sentido para o seu contexto, vamos conversar.',
       'contato.phoneLabel': 'Telefone',
       'contato.emailLabel': 'E-mail',
       'contato.linkedinLabel': 'LinkedIn',
       'contato.skillsEyebrow': 'Core skills',
       'contato.skillsTitle': 'Tecnologias e repertório',
-      'contato.backToTop': 'Voltar ao início'
+      'contato.downloadCV': 'Baixar CV (PDF)',
+      'contato.backToTop': 'Voltar ao início',
+      'skills.group1': 'Dados & IA',
+      'skills.group2': 'Engenharia & Dev',
+      'skills.group3': 'Negócio & Comunicação',
+      'skills.businessVision': 'Visão de negócio',
+      'skills.dataAnalysis': 'Análise de dados'
     },
     en: {
       'meta.title': 'Davi Yoshio | Portfolio',
@@ -137,7 +144,8 @@
 
       'intro.eyebrow': 'Portfolio · professional storytelling',
       'intro.title': 'Davi Yoshio',
-      'intro.lead': 'Data, technology, business and execution. A journey built from operations to strategic thinking, translated here into a clean, minimalist and professional visual experience.',
+      'intro.role': 'Data Science, AI & BI applied to business — from operations to decisions.',
+      'intro.lead': 'Data, technology and business. A journey that goes from e-commerce operations to Data Science and AI — told here as a storyboard.',
       'intro.pill1': 'Data Science & AI',
       'intro.pill2': 'Product & E-commerce',
       'intro.pill3': 'Analysis & Execution',
@@ -147,20 +155,20 @@
 
       'origem.eyebrow': 'Chapter 1',
       'origem.title': 'My career started before technology.',
-      'origem.body': 'It started when I was 15, in sales. I began as an entrepreneur with high-end products and scaled to importing and selling pillows in my first e-commerce. That is when I learned, hands-on, the dynamics of getting things done and building results from the ground up.',
+      'origem.body': 'It started when I was 15, in sales. I began as an entrepreneur with high-end products and scaled to importing and selling pillows in my first e-commerce. That is when I learned, hands-on, the dynamics of getting things done and generating revenue from the ground up.',
       'origem.quote': 'Before code came business instinct. Before analysis came execution.',
       'origem.label': 'Sales · Entrepreneurship · E-commerce',
 
       'operacao.eyebrow': 'Chapter 2',
       'operacao.title': 'Joining Yamá was my decision to understand how a company truly works.',
       'operacao.body1': 'I worked as an Analyst at the administrative office of Yamá Cosméticos, diving into the company\'s daily routines. It was my school on billing, finance, logistics, and systems.',
-      'operacao.body2': 'More than working in a specific area, this phase was a strategic choice: to understand the structure of a company from the inside, its flows, its gears, and how different areas connect to drive results.',
+      'operacao.body2': 'More than working in a specific area, this phase was a deliberate decision: to understand the structure of a company from the inside, its flows, its gears, and how different areas connect to drive results.',
       'operacao.label': 'Behind the scenes · Corporate routine · Learning',
 
       'lideranca.eyebrow': 'Chapter 3',
       'lideranca.title': 'After learning the operation, I took the lead.',
-      'lideranca.body1': 'I was invited to join the e-commerce team with one clear goal: to learn. I joined to understand how a digital operation works at a large company and took part in the journey that scaled the channel from zero to R$ 800k in monthly revenue.',
-      'lideranca.body2': 'In late 2023, I took over the leadership of the operation, running this structure with a more strategic view on processes, growth and channel performance.',
+      'lideranca.body1': 'I was invited to join the e-commerce team with one clear goal: to learn. I joined to understand how a digital operation works at a large company and took an active part in the operation as it grew from zero to R$ 800k in monthly revenue.',
+      'lideranca.body2': 'In late 2023, I took over the leadership of the channel and drove the operation\'s growth from R$ 800k to R$ 1.4M in monthly revenue, leading processes, performance and expansion.',
       'lideranca.label': 'E-commerce · Growth · Leadership',
 
       'virada.eyebrow': 'Chapter 4',
@@ -181,8 +189,8 @@
 
       'conquistas.eyebrow': 'Chapter 6',
       'conquistas.title': 'Learning turned into performance.',
-      'conquistas.body': 'I won 1st place at the Generative AI Hackathon, 3rd place at the Green Digital Skills Hackathon, and also took part in the Mastercard Challenge, working in contexts that required analysis, strategy, solution building and value pitching.',
-      'conquistas.quote': 'My edge lies in combining business repertoire, analytical vision and real solution-building capacity.',
+      'conquistas.body': 'I won 1st place at the Generative AI Hackathon and 3rd place at Green Digital Skills, and also took part in the Mastercard Challenge. In each one, I went from the business problem to the solution pitched to the panel.',
+      'conquistas.quote': 'My edge lies in combining business repertoire, analytical vision and the ability to turn analysis into solutions.',
       'conquistas.label': '1st place Generative AI · 3rd place Green Digital Skills · Mastercard',
 
       'pagbank.eyebrow': 'Chapter 7',
@@ -193,7 +201,7 @@
 
       'projetos.eyebrow': 'Featured projects',
       'projetos.title': 'Cases that connect technology, analysis and results.',
-      'projetos.intro': 'Here the portfolio stops being just narrative and becomes evidence. Each project reflects a combination of strategic vision, technical execution and practical application.',
+      'projetos.intro': 'Here the portfolio stops being just narrative and becomes evidence. Each project reflects a combination of business vision, technical execution and data.',
 
       'projetos.tatiart.kicker': 'Project 01',
       'projetos.tatiart.title': 'Tatiart',
@@ -208,18 +216,18 @@
 
       'projetos.aurora.kicker': 'Project 03',
       'projetos.aurora.title': 'Aurora Viridis',
-      'projetos.aurora.body': 'Project developed in the Green Digital Skills context, creating a business proposal for the free energy market. Aurora Viridis was designed as a company capable of driving energy sales in this market, connecting strategy, innovation and forward-looking vision for a sector in transformation.',
+      'projetos.aurora.body': 'A business proposal developed at Green Digital Skills for the free energy market: I modeled the concept of a company to drive energy sales in this market, combining opportunity reading, business model and the vision of a sector in transformation.',
       'projetos.aurora.skill2': 'Business model',
       'projetos.aurora.skill3': 'Free energy market',
-      'projetos.aurora.skill4': 'Strategy',
+      'projetos.aurora.skill4': 'Pitch',
 
       'projetos.monevo.kicker': 'Project 04',
       'projetos.monevo.title': 'Monevo',
-      'projetos.monevo.body': 'A project focused on organization and intelligence applied to financial context, combining technology, product vision and strategic execution. The proposal was born to turn complexity into clarity, with a solution designed to deliver real value through data, experience and direction.',
-      'projetos.monevo.skill1': 'Digital product',
-      'projetos.monevo.skill2': 'Strategy',
-      'projetos.monevo.skill3': 'Finance',
-      'projetos.monevo.skill4': 'Innovation',
+      'projetos.monevo.body': 'A product concept focused on personal financial organization: I structured the proposal of a solution that turns complexity into clarity for the user — from the problem to the value proposition.',
+      'projetos.monevo.skill1': 'Product concept',
+      'projetos.monevo.skill2': 'Fintech',
+      'projetos.monevo.skill3': 'Personal finance',
+      'projetos.monevo.skill4': 'Value proposition',
 
       'certificados.eyebrow': 'Certificates',
       'certificados.title': 'Continuous learning in data, AI and business.',
@@ -230,13 +238,19 @@
 
       'contato.eyebrow': 'Closing',
       'contato.title': 'Let\'s build something relevant.',
-      'contato.body': 'This portfolio is a summary of my journey so far: a combination of execution, strategy, data and construction. If it fits your context, let\'s talk.',
+      'contato.body': 'This portfolio is a summary of my journey so far: a combination of data, technology, execution and business vision. If it fits your context, let\'s talk.',
       'contato.phoneLabel': 'Phone',
       'contato.emailLabel': 'E-mail',
       'contato.linkedinLabel': 'LinkedIn',
       'contato.skillsEyebrow': 'Core skills',
       'contato.skillsTitle': 'Technologies and repertoire',
-      'contato.backToTop': 'Back to top'
+      'contato.downloadCV': 'Download résumé (PDF)',
+      'contato.backToTop': 'Back to top',
+      'skills.group1': 'Data & AI',
+      'skills.group2': 'Engineering & Dev',
+      'skills.group3': 'Business & Communication',
+      'skills.businessVision': 'Business vision',
+      'skills.dataAnalysis': 'Data analysis'
     },
     es: {
       'meta.title': 'Davi Yoshio | Portafolio',
@@ -254,7 +268,8 @@
 
       'intro.eyebrow': 'Portafolio · storytelling profesional',
       'intro.title': 'Davi Yoshio',
-      'intro.lead': 'Datos, tecnología, negocios y ejecución. Una trayectoria construida desde la operación hasta el pensamiento estratégico, traducida aquí en una experiencia visual limpia, minimalista y profesional.',
+      'intro.role': 'Ciencia de Datos, IA & BI aplicados al negocio — de la operación a la decisión.',
+      'intro.lead': 'Datos, tecnología y negocio. Una trayectoria que va de la operación de e-commerce a la Ciencia de Datos y la IA — contada aquí como un storyboard.',
       'intro.pill1': 'Ciencia de Datos & IA',
       'intro.pill2': 'Producto & E-commerce',
       'intro.pill3': 'Análisis & Ejecución',
@@ -264,20 +279,20 @@
 
       'origem.eyebrow': 'Capítulo 1',
       'origem.title': 'Mi carrera empezó antes de la tecnología.',
-      'origem.body': 'Empezó cuando tenía 15 años, en ventas. Comencé emprendiendo con productos high-end y escalé a la importación y venta de almohadas en mi primer e-commerce. Fue en este período que aprendí, en la práctica, la dinámica de poner manos a la obra y construir resultados desde la base.',
+      'origem.body': 'Empezó cuando tenía 15 años, en ventas. Comencé emprendiendo con productos high-end y escalé a la importación y venta de almohadas en mi primer e-commerce. Fue en este período que aprendí, en la práctica, la dinámica de poner manos a la obra y generar ingresos desde la base.',
       'origem.quote': 'Antes del código vino el instinto de negocio. Antes del análisis vino la ejecución.',
       'origem.label': 'Ventas · Emprendimiento · E-commerce',
 
       'operacao.eyebrow': 'Capítulo 2',
       'operacao.title': 'Entrar a Yamá fue mi decisión de entender cómo funciona realmente una empresa.',
       'operacao.body1': 'Trabajé como Analista en una oficina administrativa de Yamá Cosméticos, sumergiéndome en las rutinas empresariales. Fue mi escuela sobre facturación, finanzas, logística y sistemas.',
-      'operacao.body2': 'Más que trabajar en un área específica, esta etapa representó una elección estratégica: entender la estructura de una empresa por dentro, sus flujos, sus engranajes y cómo distintas áreas se conectan para generar resultado.',
+      'operacao.body2': 'Más que trabajar en un área específica, esta etapa fue una decisión consciente: entender la estructura de una empresa por dentro, sus flujos, sus engranajes y cómo distintas áreas se conectan para generar resultado.',
       'operacao.label': 'Bastidores · Rutina empresarial · Aprendizaje',
 
       'lideranca.eyebrow': 'Capítulo 3',
       'lideranca.title': 'Después de aprender la operación, asumí su liderazgo.',
-      'lideranca.body1': 'Fui invitado a integrar el equipo de e-commerce con un objetivo claro: aprender. Entré para entender cómo funciona una operación digital en una empresa de gran tamaño y participé activamente en el camino que llevó al canal de cero a R$ 800 mil en facturación mensual.',
-      'lideranca.body2': 'A finales de 2023, asumí el liderazgo de la operación, conduciendo esta estructura con una visión más estratégica sobre procesos, crecimiento y desempeño del canal.',
+      'lideranca.body1': 'Fui invitado a integrar el equipo de e-commerce con un objetivo claro: aprender. Entré para entender cómo funciona una operación digital en una empresa de gran tamaño y participé activamente en la operación que creció de cero a R$ 800 mil en facturación mensual.',
+      'lideranca.body2': 'A finales de 2023, asumí el liderazgo del canal y conduje el crecimiento de la operación de R$ 800 mil a R$ 1,4 millones por mes, al frente de procesos, desempeño y expansión.',
       'lideranca.label': 'E-commerce · Crecimiento · Liderazgo',
 
       'virada.eyebrow': 'Capítulo 4',
@@ -298,8 +313,8 @@
 
       'conquistas.eyebrow': 'Capítulo 6',
       'conquistas.title': 'Aprendizaje convertido en desempeño.',
-      'conquistas.body': 'Conquisté el 1.º lugar en el Hackathon de IA Generativa, el 3.º lugar en el Hackathon Green Digital Skills y también participé en el Desafío Mastercard, actuando en contextos que exigieron análisis, estrategia, construcción de solución y presentación de valor.',
-      'conquistas.quote': 'Mi diferencial está en unir repertorio de negocio, visión analítica y capacidad real de construir soluciones.',
+      'conquistas.body': 'Conquisté el 1.º lugar en el Hackathon de IA Generativa y el 3.º lugar en Green Digital Skills, además de participar en el Desafío Mastercard. En cada uno, partí del problema de negocio a la solución presentada ante el jurado.',
+      'conquistas.quote': 'Mi diferencial está en unir repertorio de negocio, visión analítica y la capacidad de transformar análisis en solución.',
       'conquistas.label': '1.º lugar IA Generativa · 3.º lugar Green Digital Skills · Mastercard',
 
       'pagbank.eyebrow': 'Capítulo 7',
@@ -310,7 +325,7 @@
 
       'projetos.eyebrow': 'Proyectos destacados',
       'projetos.title': 'Casos que conectan tecnología, análisis y resultado.',
-      'projetos.intro': 'Aquí, el portafolio deja de ser solo narrativa y se vuelve evidencia. Cada proyecto refleja una combinación entre visión estratégica, construcción técnica y aplicación práctica.',
+      'projetos.intro': 'Aquí, el portafolio deja de ser solo narrativa y se vuelve evidencia. Cada proyecto refleja una combinación entre visión de negocio, ejecución técnica y datos.',
 
       'projetos.tatiart.kicker': 'Proyecto 01',
       'projetos.tatiart.title': 'Tatiart',
@@ -325,18 +340,18 @@
 
       'projetos.aurora.kicker': 'Proyecto 03',
       'projetos.aurora.title': 'Aurora Viridis',
-      'projetos.aurora.body': 'Proyecto desarrollado en el contexto del Green Digital Skills, creando una propuesta de negocio orientada al mercado libre de energía. Aurora Viridis fue pensada como una empresa capaz de impulsar la venta de energía en este mercado, conectando estrategia, innovación y visión de futuro para un sector en transformación.',
+      'projetos.aurora.body': 'Propuesta de negocio desarrollada en Green Digital Skills para el mercado libre de energía: modelé el concepto de una empresa para impulsar la venta de energía en este mercado, uniendo lectura de oportunidad, modelo de negocio y la visión de un sector en transformación.',
       'projetos.aurora.skill2': 'Modelo de negocio',
       'projetos.aurora.skill3': 'Mercado libre de energía',
-      'projetos.aurora.skill4': 'Estrategia',
+      'projetos.aurora.skill4': 'Pitch',
 
       'projetos.monevo.kicker': 'Proyecto 04',
       'projetos.monevo.title': 'Monevo',
-      'projetos.monevo.body': 'Proyecto creado con foco en organización e inteligencia aplicada al contexto financiero, combinando tecnología, visión de producto y construcción estratégica. La propuesta nació para transformar complejidad en claridad, con una solución pensada para generar valor real a partir de datos, experiencia y dirección.',
-      'projetos.monevo.skill1': 'Producto digital',
-      'projetos.monevo.skill2': 'Estrategia',
-      'projetos.monevo.skill3': 'Finanzas',
-      'projetos.monevo.skill4': 'Innovación',
+      'projetos.monevo.body': 'Concepto de producto orientado a la organización financiera personal: estructuré la propuesta de una solución que transforma complejidad en claridad para el usuario — del problema a la propuesta de valor.',
+      'projetos.monevo.skill1': 'Concepto de producto',
+      'projetos.monevo.skill2': 'Fintech',
+      'projetos.monevo.skill3': 'Finanzas personales',
+      'projetos.monevo.skill4': 'Propuesta de valor',
 
       'certificados.eyebrow': 'Certificados',
       'certificados.title': 'Formación continua en datos, IA y negocios.',
@@ -347,13 +362,19 @@
 
       'contato.eyebrow': 'Cierre',
       'contato.title': 'Construyamos algo relevante.',
-      'contato.body': 'Este portafolio es una síntesis de mi trayectoria hasta aquí: una combinación entre ejecución, estrategia, datos y construcción. Si tiene sentido para tu contexto, hablemos.',
+      'contato.body': 'Este portafolio es una síntesis de mi trayectoria hasta aquí: una combinación entre datos, tecnología, ejecución y visión de negocio. Si tiene sentido para tu contexto, hablemos.',
       'contato.phoneLabel': 'Teléfono',
       'contato.emailLabel': 'E-mail',
       'contato.linkedinLabel': 'LinkedIn',
       'contato.skillsEyebrow': 'Core skills',
       'contato.skillsTitle': 'Tecnologías y repertorio',
-      'contato.backToTop': 'Volver al inicio'
+      'contato.downloadCV': 'Descargar CV (PDF)',
+      'contato.backToTop': 'Volver al inicio',
+      'skills.group1': 'Datos & IA',
+      'skills.group2': 'Ingeniería & Dev',
+      'skills.group3': 'Negocio & Comunicación',
+      'skills.businessVision': 'Visión de negocio',
+      'skills.dataAnalysis': 'Análisis de datos'
     }
   };
 
