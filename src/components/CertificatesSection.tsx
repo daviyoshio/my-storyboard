@@ -106,7 +106,7 @@ function CertCard({ cert, viewLabel }: { cert: Certificate; viewLabel: string })
       <div className="flex aspect-[4/3] items-center justify-center border-b border-hairline bg-canvas-alt p-4">
         <img
           src={cert.image}
-          alt={`Certificado: ${cert.title} — ${cert.issuer}`}
+          alt={`Certificado: ${cert.title}, ${cert.issuer}`}
           loading="lazy"
           decoding="async"
           className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-[1.03]"

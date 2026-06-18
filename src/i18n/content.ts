@@ -168,7 +168,7 @@ const pt: Dictionary = {
     headlineLead: "Conecto dados, IA e visão de negócio para transformar",
     headlineAccent: "execução em impacto real.",
     subheadline:
-      "Minha trajetória começou na operação e evoluiu para tecnologia, dados e inteligência artificial — unindo execução prática, pensamento analítico e construção de soluções.",
+      "Minha trajetória começou na operação e evoluiu para tecnologia, dados e inteligência artificial, unindo execução prática, pensamento analítico e construção de soluções.",
     badges: [
       "Data & AI",
       "Business Strategy",
@@ -216,7 +216,7 @@ const pt: Dictionary = {
         title: "E-commerce: do zero a R$ 800 mil por mês.",
         body: [
           "Entrei no time de e-commerce para entender como uma operação digital funciona em uma empresa de grande porte.",
-          "Participei ativamente do crescimento do canal — do zero a R$ 800 mil de faturamento por mês — contribuindo em processos, marca, SEO, marketplaces e performance.",
+          "Participei ativamente do crescimento do canal, do zero a R$ 800 mil de faturamento por mês, contribuindo em processos, marca, SEO, marketplaces e performance.",
         ],
         tags: ["Operação digital", "SEO", "Marketplaces", "Growth", "Automação"],
       },
@@ -225,7 +225,7 @@ const pt: Dictionary = {
         title: "A virada para os dados.",
         body: [
           "Tive um insight: eu operava uma “loja” em que os dados eram o centro. Precisava atraí-los, tratá-los e fidelizá-los com inteligência, como fazia com clientes.",
-          "Essa virada me levou à Ciência de Dados e IA no Ibmec — para unir visão de negócio com excelência técnica e transformar dados em resultado.",
+          "Essa virada me levou à Ciência de Dados e IA no Ibmec, para unir visão de negócio com excelência técnica e transformar dados em resultado.",
         ],
         tags: ["Insight", "Dados", "Decisão", "Direção de carreira"],
       },
@@ -233,7 +233,7 @@ const pt: Dictionary = {
         kicker: "Capítulo 05",
         title: "Ciência de Dados, IA e construção prática.",
         body: [
-          "Na graduação, participei de hackathons e projetos práticos desde o início — construindo, apresentando e testando soluções com Python, machine learning, BI e analytics.",
+          "Na graduação, participei de hackathons e projetos práticos desde o início, construindo, apresentando e testando soluções com Python, machine learning, BI e analytics.",
           "Conquistei 1º lugar no Hackathon de IA Generativa e 3º no Green Digital Skills, fui selecionado Embaixador Ibmec e entrei na Liga Acadêmica de Tecnologia.",
         ],
         tags: [
@@ -248,7 +248,7 @@ const pt: Dictionary = {
         kicker: "Capítulo 06",
         title: "Data & AI em escala real, no PagBank.",
         body: [
-          "Como estagiário de Data & AI, contribuo com os times de Data Engineering e AI Foundation — onde minha trajetória de negócio e tecnologia ganha forma em uma operação de dados em escala.",
+          "Como estagiário de Data & AI, contribuo com os times de Data Engineering e AI Foundation, onde minha trajetória de negócio e tecnologia ganha forma em uma operação de dados em escala.",
           "Tenho contato com arquitetura Lakehouse, camadas de armazenamento, provedores e ingestão de dados; e apoio documentação técnica de plataformas de IA, POCs e arquiteturas de agentes, organizando materiais sobre LLMs, RAG, APIs e platform engineering.",
         ],
         tags: [
@@ -266,7 +266,7 @@ const pt: Dictionary = {
     eyebrow: "Evidências de impacto",
     title: "Resultados que conectam negócio, dados e tecnologia.",
     intro:
-      "Números e marcos que sustentam a narrativa — da operação de e-commerce à atuação em dados e IA.",
+      "Números e marcos que sustentam a narrativa, da operação de e-commerce à atuação em dados e IA.",
     stats: [
       {
         value: 800,
@@ -304,7 +304,7 @@ const pt: Dictionary = {
       {
         title: "Projetos multidisciplinares",
         description:
-          "Soluções com Python, Power BI, Java, Web e IA — conectando negócio, análise e tecnologia.",
+          "Soluções com Python, Power BI, Java, Web e IA, conectando negócio, análise e tecnologia.",
       },
     ],
   },
@@ -318,7 +318,7 @@ const pt: Dictionary = {
       tatiart: {
         kicker: "Projeto 01",
         description:
-          "Plataforma web focada em conversão, SEO, captação de leads e internacionalização — conectando front-end, back-end em Java Spring Boot e fundamentos de e-commerce.",
+          "Plataforma web focada em conversão, SEO, captação de leads e internacionalização, conectando front-end, back-end em Java Spring Boot e fundamentos de e-commerce.",
         tags: ["HTML", "CSS", "JavaScript", "Java Spring Boot", "SEO", "i18n"],
       },
       cittamobi: {
@@ -336,13 +336,13 @@ const pt: Dictionary = {
       aurora: {
         kicker: "Projeto 03",
         description:
-          "Projeto de negócio para o mercado livre de energia, conectando sustentabilidade, estratégia, proposta de valor e inovação — da oportunidade ao pitch.",
+          "Projeto de negócio para o mercado livre de energia, conectando sustentabilidade, estratégia, proposta de valor e inovação, da oportunidade ao pitch.",
         tags: ["Estratégia", "Energia", "Sustentabilidade", "Produto", "Pitch"],
       },
       monevo: {
         kicker: "Projeto 04",
         description:
-          "Conceito de produto para organização financeira pessoal, transformando complexidade em clareza para o usuário — do problema à proposta de valor.",
+          "Conceito de produto para organização financeira pessoal, transformando complexidade em clareza para o usuário, do problema à proposta de valor.",
         tags: ["Fintech", "Produto Digital", "Finanças", "UX", "Estratégia"],
       },
     },
@@ -356,7 +356,7 @@ const pt: Dictionary = {
     eyebrow: "Stack",
     title: "Stack que conecta análise, IA e negócio.",
     intro:
-      "Ferramentas e repertório organizados por camada — do dado bruto à decisão de negócio.",
+      "Ferramentas e repertório organizados por camada, do dado bruto à decisão de negócio.",
     groups: {
       dataAi: "Dados & IA",
       dataEng: "Data Engineering & Platforms",
@@ -370,7 +370,7 @@ const pt: Dictionary = {
     eyebrow: "Formação contínua",
     title: "Uma trilha de aprendizado em dados, IA e negócios.",
     intro:
-      "Cada certificado é uma camada de aprofundamento — da engenharia de dados ao branding, passando por machine learning, BI, qualidade de processos e soft skills.",
+      "Cada certificado é uma camada de aprofundamento, da engenharia de dados ao branding, passando por machine learning, BI, qualidade de processos e soft skills.",
     categories: {
       aiCloud: "IA & Cloud",
       ml: "Machine Learning",
@@ -423,7 +423,7 @@ const pt: Dictionary = {
   },
 
   footer: {
-    tagline: "Negócio, dados e IA — execução transformada em impacto.",
+    tagline: "Negócio, dados e IA. Execução transformada em impacto.",
     rights: "Todos os direitos reservados.",
   },
 };
@@ -453,7 +453,7 @@ const en: Dictionary = {
     headlineLead: "I connect data, AI and business vision to turn",
     headlineAccent: "execution into real impact.",
     subheadline:
-      "My journey started in operations and evolved into technology, data and artificial intelligence — combining hands-on execution, analytical thinking and solution building.",
+      "My journey started in operations and evolved into technology, data and artificial intelligence, combining hands-on execution, analytical thinking and solution building.",
     badges: [
       "Data & AI",
       "Business Strategy",
@@ -501,7 +501,7 @@ const en: Dictionary = {
         title: "E-commerce: from zero to R$ 800k per month.",
         body: [
           "I joined the e-commerce team to understand how a digital operation works at a large company.",
-          "I actively took part in the channel's growth — from zero to R$ 800k in monthly revenue — contributing to processes, brand, SEO, marketplaces and performance.",
+          "I actively took part in the channel's growth, from zero to R$ 800k in monthly revenue, contributing to processes, brand, SEO, marketplaces and performance.",
         ],
         tags: ["Digital operation", "SEO", "Marketplaces", "Growth", "Automation"],
       },
@@ -510,7 +510,7 @@ const en: Dictionary = {
         title: "The turn toward data.",
         body: [
           "I had an insight: I was running a “store” where data was the core. I had to attract, process and retain it intelligently, just like I did with customers.",
-          "That shift led me to Data Science and AI at Ibmec — to combine business vision with technical excellence and turn data into results.",
+          "That shift led me to Data Science and AI at Ibmec, to combine business vision with technical excellence and turn data into results.",
         ],
         tags: ["Insight", "Data", "Decision", "Career direction"],
       },
@@ -518,7 +518,7 @@ const en: Dictionary = {
         kicker: "Chapter 05",
         title: "Data Science, AI and hands-on building.",
         body: [
-          "In my degree I joined hackathons and practical projects from day one — building, presenting and testing solutions with Python, machine learning, BI and analytics.",
+          "In my degree I joined hackathons and practical projects from day one, building, presenting and testing solutions with Python, machine learning, BI and analytics.",
           "I won 1st place at the Generative AI Hackathon and 3rd at Green Digital Skills, was selected as an Ibmec Ambassador and joined the Academic Technology League.",
         ],
         tags: [
@@ -533,7 +533,7 @@ const en: Dictionary = {
         kicker: "Chapter 06",
         title: "Data & AI at real scale, at PagBank.",
         body: [
-          "As a Data & AI intern, I contribute to the Data Engineering and AI Foundation teams — where my business and technology path takes shape in a data operation at scale.",
+          "As a Data & AI intern, I contribute to the Data Engineering and AI Foundation teams, where my business and technology path takes shape in a data operation at scale.",
           "I work with Lakehouse architecture, storage layers, data providers and ingestion; and support technical documentation for AI platforms, POCs and agent architectures, organizing materials on LLMs, RAG, APIs and platform engineering.",
         ],
         tags: [
@@ -551,7 +551,7 @@ const en: Dictionary = {
     eyebrow: "Evidence of impact",
     title: "Results that connect business, data and technology.",
     intro:
-      "Numbers and milestones that back the narrative — from e-commerce operations to data and AI work.",
+      "Numbers and milestones that back the narrative, from e-commerce operations to data and AI work.",
     stats: [
       {
         value: 800,
@@ -589,7 +589,7 @@ const en: Dictionary = {
       {
         title: "Cross-disciplinary projects",
         description:
-          "Solutions with Python, Power BI, Java, Web and AI — connecting business, analysis and technology.",
+          "Solutions with Python, Power BI, Java, Web and AI, connecting business, analysis and technology.",
       },
     ],
   },
@@ -603,7 +603,7 @@ const en: Dictionary = {
       tatiart: {
         kicker: "Project 01",
         description:
-          "A web platform focused on conversion, SEO, lead capture and internationalization — connecting front-end, a Java Spring Boot back-end and e-commerce fundamentals.",
+          "A web platform focused on conversion, SEO, lead capture and internationalization, connecting front-end, a Java Spring Boot back-end and e-commerce fundamentals.",
         tags: ["HTML", "CSS", "JavaScript", "Java Spring Boot", "SEO", "i18n"],
       },
       cittamobi: {
@@ -621,13 +621,13 @@ const en: Dictionary = {
       aurora: {
         kicker: "Project 03",
         description:
-          "A business project for the free energy market, connecting sustainability, strategy, value proposition and innovation — from opportunity to pitch.",
+          "A business project for the free energy market, connecting sustainability, strategy, value proposition and innovation, from opportunity to pitch.",
         tags: ["Strategy", "Energy", "Sustainability", "Product", "Pitch"],
       },
       monevo: {
         kicker: "Project 04",
         description:
-          "A product concept for personal financial organization, turning complexity into clarity for the user — from problem to value proposition.",
+          "A product concept for personal financial organization, turning complexity into clarity for the user, from problem to value proposition.",
         tags: ["Fintech", "Digital Product", "Finance", "UX", "Strategy"],
       },
     },
@@ -641,7 +641,7 @@ const en: Dictionary = {
     eyebrow: "Stack",
     title: "A stack that connects analysis, AI and business.",
     intro:
-      "Tools and repertoire organized by layer — from raw data to the business decision.",
+      "Tools and repertoire organized by layer, from raw data to the business decision.",
     groups: {
       dataAi: "Data & AI",
       dataEng: "Data Engineering & Platforms",
@@ -655,7 +655,7 @@ const en: Dictionary = {
     eyebrow: "Continuous learning",
     title: "A learning track in data, AI and business.",
     intro:
-      "Each certificate is a layer of depth — from data engineering to branding, through machine learning, BI, process quality and soft skills.",
+      "Each certificate is a layer of depth, from data engineering to branding, through machine learning, BI, process quality and soft skills.",
     categories: {
       aiCloud: "AI & Cloud",
       ml: "Machine Learning",
@@ -708,7 +708,7 @@ const en: Dictionary = {
   },
 
   footer: {
-    tagline: "Business, data and AI — execution turned into impact.",
+    tagline: "Business, data and AI. Execution turned into impact.",
     rights: "All rights reserved.",
   },
 };
@@ -738,7 +738,7 @@ const es: Dictionary = {
     headlineLead: "Conecto datos, IA y visión de negocio para transformar",
     headlineAccent: "la ejecución en impacto real.",
     subheadline:
-      "Mi trayectoria empezó en la operación y evolucionó hacia tecnología, datos e inteligencia artificial — uniendo ejecución práctica, pensamiento analítico y construcción de soluciones.",
+      "Mi trayectoria empezó en la operación y evolucionó hacia tecnología, datos e inteligencia artificial, uniendo ejecución práctica, pensamiento analítico y construcción de soluciones.",
     badges: [
       "Data & AI",
       "Business Strategy",
@@ -786,7 +786,7 @@ const es: Dictionary = {
         title: "E-commerce: de cero a R$ 800 mil por mes.",
         body: [
           "Entré al equipo de e-commerce para entender cómo funciona una operación digital en una empresa de gran tamaño.",
-          "Participé activamente del crecimiento del canal — de cero a R$ 800 mil de facturación por mes — contribuyendo en procesos, marca, SEO, marketplaces y desempeño.",
+          "Participé activamente del crecimiento del canal, de cero a R$ 800 mil de facturación por mes, contribuyendo en procesos, marca, SEO, marketplaces y desempeño.",
         ],
         tags: ["Operación digital", "SEO", "Marketplaces", "Growth", "Automatización"],
       },
@@ -795,7 +795,7 @@ const es: Dictionary = {
         title: "El giro hacia los datos.",
         body: [
           "Tuve un insight: operaba una “tienda” donde los datos eran el centro. Necesitaba atraerlos, tratarlos y fidelizarlos con inteligencia, igual que con los clientes.",
-          "Ese giro me llevó a la Ciencia de Datos e IA en Ibmec — para unir visión de negocio con excelencia técnica y transformar datos en resultados.",
+          "Ese giro me llevó a la Ciencia de Datos e IA en Ibmec, para unir visión de negocio con excelencia técnica y transformar datos en resultados.",
         ],
         tags: ["Insight", "Datos", "Decisión", "Dirección de carrera"],
       },
@@ -803,7 +803,7 @@ const es: Dictionary = {
         kicker: "Capítulo 05",
         title: "Ciencia de Datos, IA y construcción práctica.",
         body: [
-          "En la carrera participé en hackathons y proyectos prácticos desde el inicio — construyendo, presentando y probando soluciones con Python, machine learning, BI y analytics.",
+          "En la carrera participé en hackathons y proyectos prácticos desde el inicio, construyendo, presentando y probando soluciones con Python, machine learning, BI y analytics.",
           "Gané el 1.º lugar en el Hackathon de IA Generativa y el 3.º en Green Digital Skills, fui seleccionado Embajador Ibmec e ingresé a la Liga Académica de Tecnología.",
         ],
         tags: [
@@ -818,7 +818,7 @@ const es: Dictionary = {
         kicker: "Capítulo 06",
         title: "Data & AI a escala real, en PagBank.",
         body: [
-          "Como pasante de Data & AI, contribuyo con los equipos de Data Engineering y AI Foundation — donde mi trayectoria de negocio y tecnología toma forma en una operación de datos a escala.",
+          "Como pasante de Data & AI, contribuyo con los equipos de Data Engineering y AI Foundation, donde mi trayectoria de negocio y tecnología toma forma en una operación de datos a escala.",
           "Tengo contacto con arquitectura Lakehouse, capas de almacenamiento, proveedores e ingesta de datos; y apoyo documentación técnica de plataformas de IA, POCs y arquitecturas de agentes, organizando materiales sobre LLMs, RAG, APIs y platform engineering.",
         ],
         tags: [
@@ -836,7 +836,7 @@ const es: Dictionary = {
     eyebrow: "Evidencias de impacto",
     title: "Resultados que conectan negocio, datos y tecnología.",
     intro:
-      "Números e hitos que sostienen la narrativa — de la operación de e-commerce al trabajo en datos e IA.",
+      "Números e hitos que sostienen la narrativa, de la operación de e-commerce al trabajo en datos e IA.",
     stats: [
       {
         value: 800,
@@ -874,7 +874,7 @@ const es: Dictionary = {
       {
         title: "Proyectos multidisciplinarios",
         description:
-          "Soluciones con Python, Power BI, Java, Web e IA — conectando negocio, análisis y tecnología.",
+          "Soluciones con Python, Power BI, Java, Web e IA, conectando negocio, análisis y tecnología.",
       },
     ],
   },
@@ -888,7 +888,7 @@ const es: Dictionary = {
       tatiart: {
         kicker: "Proyecto 01",
         description:
-          "Plataforma web enfocada en conversión, SEO, captación de leads e internacionalización — conectando front-end, back-end en Java Spring Boot y fundamentos de e-commerce.",
+          "Plataforma web enfocada en conversión, SEO, captación de leads e internacionalización, conectando front-end, back-end en Java Spring Boot y fundamentos de e-commerce.",
         tags: ["HTML", "CSS", "JavaScript", "Java Spring Boot", "SEO", "i18n"],
       },
       cittamobi: {
@@ -906,13 +906,13 @@ const es: Dictionary = {
       aurora: {
         kicker: "Proyecto 03",
         description:
-          "Proyecto de negocio para el mercado libre de energía, conectando sostenibilidad, estrategia, propuesta de valor e innovación — de la oportunidad al pitch.",
+          "Proyecto de negocio para el mercado libre de energía, conectando sostenibilidad, estrategia, propuesta de valor e innovación, de la oportunidad al pitch.",
         tags: ["Estrategia", "Energía", "Sostenibilidad", "Producto", "Pitch"],
       },
       monevo: {
         kicker: "Proyecto 04",
         description:
-          "Concepto de producto para organización financiera personal, transformando complejidad en claridad para el usuario — del problema a la propuesta de valor.",
+          "Concepto de producto para organización financiera personal, transformando complejidad en claridad para el usuario, del problema a la propuesta de valor.",
         tags: ["Fintech", "Producto Digital", "Finanzas", "UX", "Estrategia"],
       },
     },
@@ -926,7 +926,7 @@ const es: Dictionary = {
     eyebrow: "Stack",
     title: "Un stack que conecta análisis, IA y negocio.",
     intro:
-      "Herramientas y repertorio organizados por capa — del dato bruto a la decisión de negocio.",
+      "Herramientas y repertorio organizados por capa, del dato bruto a la decisión de negocio.",
     groups: {
       dataAi: "Datos & IA",
       dataEng: "Data Engineering & Platforms",
@@ -940,7 +940,7 @@ const es: Dictionary = {
     eyebrow: "Formación continua",
     title: "Una ruta de aprendizaje en datos, IA y negocios.",
     intro:
-      "Cada certificado es una capa de profundización — de la ingeniería de datos al branding, pasando por machine learning, BI, calidad de procesos y soft skills.",
+      "Cada certificado es una capa de profundización, de la ingeniería de datos al branding, pasando por machine learning, BI, calidad de procesos y soft skills.",
     categories: {
       aiCloud: "IA & Cloud",
       ml: "Machine Learning",
@@ -993,7 +993,7 @@ const es: Dictionary = {
   },
 
   footer: {
-    tagline: "Negocio, datos e IA — ejecución transformada en impacto.",
+    tagline: "Negocio, datos e IA. Ejecución transformada en impacto.",
     rights: "Todos los derechos reservados.",
   },
 };
