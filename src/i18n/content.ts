@@ -68,6 +68,7 @@ export interface Dictionary {
     ctaContact: string;
     panelLabel: string;
     panelMetricLabel: string;
+    panelBadge: string;
     panelFootnote: string;
   };
 
@@ -182,6 +183,7 @@ const pt: Dictionary = {
     ctaContact: "Entrar em contato",
     panelLabel: "Da operação à decisão",
     panelMetricLabel: "Crescimento da operação de e-commerce",
+    panelBadge: "do zero",
     panelFootnote: "Negócio · Dados · IA · Execução",
   },
 
@@ -211,12 +213,12 @@ const pt: Dictionary = {
       },
       lideranca: {
         kicker: "Capítulo 03",
-        title: "E-commerce, crescimento e liderança.",
+        title: "E-commerce: do zero a R$ 800 mil por mês.",
         body: [
-          "Entrei no time de e-commerce para aprender como uma operação digital funciona em escala — e participei do crescimento do canal do zero a R$ 800 mil por mês.",
-          "No fim de 2023 assumi a liderança e conduzi a operação de R$ 800 mil a R$ 1,4 milhão por mês, à frente de processos, marca, SEO, marketplaces e performance.",
+          "Entrei no time de e-commerce para entender como uma operação digital funciona em uma empresa de grande porte.",
+          "Participei ativamente do crescimento do canal — do zero a R$ 800 mil de faturamento por mês — contribuindo em processos, marca, SEO, marketplaces e performance.",
         ],
-        tags: ["Liderança", "SEO", "Marketplaces", "Growth", "Automação"],
+        tags: ["Operação digital", "SEO", "Marketplaces", "Growth", "Automação"],
       },
       virada: {
         kicker: "Capítulo 04",
@@ -267,21 +269,20 @@ const pt: Dictionary = {
       "Números e marcos que sustentam a narrativa — da operação de e-commerce à atuação em dados e IA.",
     stats: [
       {
-        value: 1.4,
-        decimals: 1,
+        value: 800,
         prefix: "R$ ",
-        suffix: "M",
-        label: "Faturamento mensal liderado no e-commerce",
-      },
-      {
-        value: 75,
-        suffix: "%",
-        label: "Crescimento da operação (R$ 800k → R$ 1,4M/mês)",
+        suffix: "k",
+        label: "Faturamento mensal do e-commerce, construído do zero",
       },
       {
         value: 1,
         suffix: "º",
         label: "Lugar no Hackathon de IA Generativa",
+      },
+      {
+        value: 3,
+        suffix: "º",
+        label: "Lugar no Green Digital Skills",
       },
       {
         value: 11,
@@ -467,6 +468,7 @@ const en: Dictionary = {
     ctaContact: "Get in touch",
     panelLabel: "From operations to decisions",
     panelMetricLabel: "E-commerce operation growth",
+    panelBadge: "from zero",
     panelFootnote: "Business · Data · AI · Execution",
   },
 
@@ -496,12 +498,12 @@ const en: Dictionary = {
       },
       lideranca: {
         kicker: "Chapter 03",
-        title: "E-commerce, growth and leadership.",
+        title: "E-commerce: from zero to R$ 800k per month.",
         body: [
-          "I joined the e-commerce team to learn how a digital operation works at scale — taking part as the channel grew from zero to R$ 800k per month.",
-          "In late 2023 I took the lead and drove the operation from R$ 800k to R$ 1.4M per month, owning processes, brand, SEO, marketplaces and performance.",
+          "I joined the e-commerce team to understand how a digital operation works at a large company.",
+          "I actively took part in the channel's growth — from zero to R$ 800k in monthly revenue — contributing to processes, brand, SEO, marketplaces and performance.",
         ],
-        tags: ["Leadership", "SEO", "Marketplaces", "Growth", "Automation"],
+        tags: ["Digital operation", "SEO", "Marketplaces", "Growth", "Automation"],
       },
       virada: {
         kicker: "Chapter 04",
@@ -552,21 +554,20 @@ const en: Dictionary = {
       "Numbers and milestones that back the narrative — from e-commerce operations to data and AI work.",
     stats: [
       {
-        value: 1.4,
-        decimals: 1,
+        value: 800,
         prefix: "R$ ",
-        suffix: "M",
-        label: "Monthly revenue led in e-commerce",
-      },
-      {
-        value: 75,
-        suffix: "%",
-        label: "Operation growth (R$ 800k → R$ 1.4M/mo)",
+        suffix: "k",
+        label: "Monthly e-commerce revenue, built from zero",
       },
       {
         value: 1,
         suffix: "st",
         label: "Place at the Generative AI Hackathon",
+      },
+      {
+        value: 3,
+        suffix: "rd",
+        label: "Place at Green Digital Skills",
       },
       {
         value: 11,
@@ -752,6 +753,7 @@ const es: Dictionary = {
     ctaContact: "Contactar",
     panelLabel: "De la operación a la decisión",
     panelMetricLabel: "Crecimiento de la operación de e-commerce",
+    panelBadge: "desde cero",
     panelFootnote: "Negocio · Datos · IA · Ejecución",
   },
 
@@ -781,12 +783,12 @@ const es: Dictionary = {
       },
       lideranca: {
         kicker: "Capítulo 03",
-        title: "E-commerce, crecimiento y liderazgo.",
+        title: "E-commerce: de cero a R$ 800 mil por mes.",
         body: [
-          "Entré al equipo de e-commerce para aprender cómo funciona una operación digital a escala — participando del crecimiento del canal de cero a R$ 800 mil por mes.",
-          "A finales de 2023 asumí el liderazgo y conduje la operación de R$ 800 mil a R$ 1,4 millones por mes, al frente de procesos, marca, SEO, marketplaces y desempeño.",
+          "Entré al equipo de e-commerce para entender cómo funciona una operación digital en una empresa de gran tamaño.",
+          "Participé activamente del crecimiento del canal — de cero a R$ 800 mil de facturación por mes — contribuyendo en procesos, marca, SEO, marketplaces y desempeño.",
         ],
-        tags: ["Liderazgo", "SEO", "Marketplaces", "Growth", "Automatización"],
+        tags: ["Operación digital", "SEO", "Marketplaces", "Growth", "Automatización"],
       },
       virada: {
         kicker: "Capítulo 04",
@@ -837,21 +839,20 @@ const es: Dictionary = {
       "Números e hitos que sostienen la narrativa — de la operación de e-commerce al trabajo en datos e IA.",
     stats: [
       {
-        value: 1.4,
-        decimals: 1,
+        value: 800,
         prefix: "R$ ",
-        suffix: "M",
-        label: "Facturación mensual liderada en e-commerce",
-      },
-      {
-        value: 75,
-        suffix: "%",
-        label: "Crecimiento de la operación (R$ 800k → R$ 1,4M/mes)",
+        suffix: "k",
+        label: "Facturación mensual del e-commerce, construida desde cero",
       },
       {
         value: 1,
         suffix: "º",
         label: "Lugar en el Hackathon de IA Generativa",
+      },
+      {
+        value: 3,
+        suffix: "º",
+        label: "Lugar en Green Digital Skills",
       },
       {
         value: 11,

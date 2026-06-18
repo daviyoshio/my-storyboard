@@ -101,14 +101,14 @@ export function HeroVisual() {
         <div className="mt-5 flex items-end justify-between border-t border-hairline pt-4">
           <div>
             <div className="text-[1.7rem] font-semibold leading-none tracking-tight text-ink">
-              R$ 1,4M
+              R$ 800k
             </div>
             <div className="mt-1 text-[0.75rem] text-muted">
               {t.hero.panelMetricLabel}
             </div>
           </div>
           <div className="rounded-pill bg-accent-soft px-3 py-1 text-[0.8rem] font-semibold text-accent-ink">
-            +75%
+            {t.hero.panelBadge}
           </div>
         </div>
       </motion.div>
