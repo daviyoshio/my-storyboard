@@ -56,11 +56,11 @@ export function ProjectCard({
                 href={l.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/link inline-flex items-center gap-1.5 text-[0.86rem] font-semibold text-ink transition-colors hover:text-accent"
+                className="group/link inline-flex items-center gap-1.5 font-mono text-[0.74rem] font-medium uppercase tracking-[0.04em] text-ink transition-colors hover:text-accent"
               >
                 {l.label}
                 <span className="transition-transform duration-300 group-hover/link:translate-x-0.5">
-                  →
+                  ↗
                 </span>
               </a>
             ))

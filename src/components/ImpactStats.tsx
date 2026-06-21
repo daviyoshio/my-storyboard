@@ -29,9 +29,10 @@ export function ImpactStats() {
           <Reveal
             key={stat.label}
             delay={i * 0.08}
+            blur={5}
             className="surface-card flex flex-col gap-3 rounded-panel p-6 transition-transform duration-300 hover:-translate-y-1"
           >
-            <span className="text-[clamp(2.2rem,4vw,3rem)] font-semibold leading-none tracking-tight text-ink">
+            <span className="font-doto text-[clamp(2.4rem,4.6vw,3.4rem)] font-bold leading-none text-ink">
               <Counter
                 value={stat.value}
                 decimals={stat.decimals}
@@ -40,7 +41,7 @@ export function ImpactStats() {
                 locale={locale}
               />
             </span>
-            <span className="text-[0.86rem] leading-snug text-muted">
+            <span className="font-mono text-[0.78rem] uppercase leading-snug tracking-[0.04em] text-muted">
               {stat.label}
             </span>
           </Reveal>
@@ -53,6 +54,7 @@ export function ImpactStats() {
           <Reveal
             key={ev.title}
             delay={i * 0.08}
+            blur={5}
             className="group relative overflow-hidden rounded-panel border border-hairline bg-gradient-to-b from-accent-soft/50 to-surface p-6"
           >
             <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-ink text-white">

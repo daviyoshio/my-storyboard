@@ -9,15 +9,13 @@ export function Tag({
   tone?: "default" | "accent";
 }) {
   const tones = {
-    default:
-      "border-hairline bg-canvas-alt/60 text-ink-soft",
-    accent:
-      "border-transparent bg-accent-soft text-accent-ink",
+    default: "bg-[var(--color-tag-bg)] text-ink-soft",
+    accent: "bg-accent-soft text-accent-ink",
   } as const;
 
   return (
     <span
-      className={`inline-flex items-center rounded-pill border px-3 py-1.5 text-[0.8rem] font-medium ${tones[tone]}`}
+      className={`inline-flex items-center rounded-pill px-2.5 py-1.5 font-mono text-[0.68rem] uppercase tracking-[0.04em] ${tones[tone]}`}
     >
       {children}
     </span>

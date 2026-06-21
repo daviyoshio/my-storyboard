@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { EASE } from "../lib/motion";
 import { useI18n } from "../i18n/LanguageContext";
 import { useScrollSpy } from "../hooks/useScrollSpy";
+import { Clock } from "./Clock";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { Barcode } from "./Preloader";
 
 const SECTION_IDS = [
   "inicio",
@@ -31,15 +33,7 @@ export function Navbar() {
   const { t } = useI18n();
   const reduce = useReducedMotion();
   const active = useScrollSpy([...SECTION_IDS]);
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   // Lock body scroll while the mobile menu is open.
   useEffect(() => {
@@ -53,17 +47,17 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4">
       <nav
         aria-label="Primary"
-        className={`flex w-full max-w-[var(--container-page)] items-center justify-between gap-3 rounded-pill border px-3 py-2 transition-all duration-300 sm:px-4 ${
-          scrolled || open
-            ? "border-hairline bg-surface/80 shadow-soft backdrop-blur-xl"
-            : "border-transparent bg-surface/40 backdrop-blur-md"
-        }`}
+        className="flex w-full max-w-[var(--container-page)] items-center justify-between gap-3 rounded-pill border border-hairline bg-surface/80 px-3 py-2 shadow-soft backdrop-blur-xl sm:px-4"
       >
         <a
           href="#inicio"
-          className="shrink-0 rounded-full px-2 py-1 text-[0.95rem] font-semibold tracking-tight text-ink"
+          className="flex shrink-0 items-center gap-2.5 rounded-full px-1.5 py-1"
+          aria-label="Davi Yoshio — início"
         >
-          Davi Yoshio
+          <Barcode className="h-3.5" />
+          <span className="font-mono text-[0.8rem] font-medium uppercase tracking-[0.06em] text-ink">
+            Davi Yoshio
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -75,7 +69,7 @@ export function Navbar() {
                 <a
                   href={`#${id}`}
                   aria-current={isActive ? "true" : undefined}
-                  className={`relative z-10 inline-flex rounded-pill px-3 py-2 text-[0.82rem] font-medium transition-colors duration-200 ${
+                  className={`relative z-10 inline-flex rounded-pill px-3 py-2 font-mono text-[0.7rem] uppercase tracking-[0.06em] transition-colors duration-200 ${
                     isActive ? "text-ink" : "text-muted hover:text-ink"
                   }`}
                 >
@@ -97,7 +91,12 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <Clock
+            city="São Paulo"
+            timeZone="America/Sao_Paulo"
+            className="hidden xl:inline-flex"
+          />
           <LanguageSwitch />
           {/* Mobile menu toggle */}
           <button

@@ -1,6 +1,7 @@
 import { useI18n } from "../i18n/LanguageContext";
 import { Reveal } from "./ui/Reveal";
 import { RevealText } from "./ui/RevealText";
+import { ScrollReveal } from "./ui/ScrollReveal";
 import { Section } from "./ui/Section";
 
 export function Mindset() {
@@ -17,9 +18,10 @@ export function Mindset() {
           <h2 className="text-balance text-[clamp(2rem,4.2vw,3.2rem)] font-semibold leading-[1.1] text-ink">
             <RevealText text={t.mindset.title} />
           </h2>
-          <p className="text-pretty text-[1.1rem] leading-relaxed text-muted">
-            {t.mindset.body}
-          </p>
+          <ScrollReveal
+            text={t.mindset.body}
+            className="text-pretty font-serif text-[clamp(1.25rem,2.2vw,1.7rem)] leading-snug text-ink"
+          />
         </Reveal>
 
         <div className="flex flex-col gap-4">
@@ -29,7 +31,7 @@ export function Mindset() {
               delay={i * 0.1}
               className="surface-card flex gap-5 rounded-panel p-6 transition-transform duration-300 hover:-translate-y-1"
             >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ink text-[1rem] font-semibold text-white">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ink font-doto text-[1.05rem] font-bold text-white">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>

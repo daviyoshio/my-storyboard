@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { EASE } from "../../lib/motion";
 
 interface RevealTextProps {
@@ -10,23 +10,30 @@ interface RevealTextProps {
 }
 
 const word: Variants = {
-  hidden: { y: "115%" },
-  show: { y: 0, transition: { duration: 0.72, ease: EASE } },
+  hidden: { opacity: 0, y: 8, filter: "blur(8px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.55, ease: EASE },
+  },
 };
 
 const container = (delay: number): Variants => ({
   hidden: {},
-  show: { transition: { staggerChildren: 0.045, delayChildren: delay } },
+  show: { transition: { staggerChildren: 0.04, delayChildren: delay } },
 });
 
 /**
- * Masked, word-by-word reveal used on headings — each word rises from behind a
- * clip mask as it scrolls into view. The signature "Framer portfolio" text
- * animation. Accessible: the full string is exposed via aria-label.
- *
- * Render inside a heading element, e.g. <h2 className="..."><RevealText text=... /></h2>
+ * Word-by-word reveal on scroll: each word fades + de-blurs + rises into place
+ * with a stagger. The signature "Framer portfolio" headline animation.
+ * Honours prefers-reduced-motion (renders the text statically). Accessible: the
+ * full string is exposed via aria-label.
  */
 export function RevealText({ text, className, delay = 0 }: RevealTextProps) {
+  const reduce = useReducedMotion();
+  if (reduce) return <span className={className}>{text}</span>;
+
   const words = text.split(" ");
 
   return (
@@ -41,14 +48,9 @@ export function RevealText({ text, className, delay = 0 }: RevealTextProps) {
     >
       {words.map((w, i) => (
         <Fragment key={i}>
-          <span
-            aria-hidden
-            className="inline-block overflow-hidden pb-[0.12em] align-bottom -mb-[0.12em]"
-          >
-            <motion.span variants={word} className="inline-block">
-              {w}
-            </motion.span>
-          </span>
+          <motion.span variants={word} aria-hidden className="inline-block">
+            {w}
+          </motion.span>
           {i < words.length - 1 ? " " : null}
         </Fragment>
       ))}

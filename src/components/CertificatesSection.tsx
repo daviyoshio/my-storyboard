@@ -59,7 +59,7 @@ export function CertificatesSection() {
             type="button"
             onClick={() => setExpanded((v) => !v)}
             aria-expanded={expanded}
-            className="inline-flex items-center gap-2 rounded-pill border border-hairline-strong bg-surface px-6 py-3 text-[0.9rem] font-semibold text-ink shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-canvas-alt"
+            className="inline-flex items-center gap-2 rounded-pill border border-hairline-strong bg-surface px-6 py-3 font-mono text-[0.74rem] font-medium uppercase tracking-[0.06em] text-ink shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-canvas-alt"
           >
             {expanded ? t.certificates.showLess : t.certificates.showMore}
             <span
@@ -124,7 +124,7 @@ function CertCard({ cert, viewLabel }: { cert: Certificate; viewLabel: string })
           {cert.skills.map((s) => (
             <li
               key={s}
-              className="rounded-pill border border-hairline bg-canvas-alt/60 px-2.5 py-1 text-[0.72rem] text-muted"
+              className="rounded-pill bg-[var(--color-tag-bg)] px-2.5 py-1 font-mono text-[0.62rem] uppercase tracking-[0.04em] text-muted"
             >
               {s}
             </li>
@@ -134,11 +134,11 @@ function CertCard({ cert, viewLabel }: { cert: Certificate; viewLabel: string })
           href={cert.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="group/link mt-auto inline-flex items-center gap-1.5 pt-2 text-[0.82rem] font-semibold text-ink transition-colors hover:text-accent"
+          className="group/link mt-auto inline-flex items-center gap-1.5 pt-2 font-mono text-[0.72rem] font-medium uppercase tracking-[0.04em] text-ink transition-colors hover:text-accent"
         >
           {viewLabel}
           <span className="transition-transform duration-300 group-hover/link:translate-x-0.5">
-            →
+            ↗
           </span>
         </a>
       </div>

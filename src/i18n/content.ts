@@ -66,6 +66,7 @@ export interface Dictionary {
     ctaProjects: string;
     ctaCV: string;
     ctaContact: string;
+    availability: string;
   };
 
   story: {
@@ -177,6 +178,7 @@ const pt: Dictionary = {
     ctaProjects: "Ver projetos",
     ctaCV: "Baixar CV",
     ctaContact: "Entrar em contato",
+    availability: "Disponível para projetos",
   },
 
   story: {
@@ -458,6 +460,7 @@ const en: Dictionary = {
     ctaProjects: "See projects",
     ctaCV: "Download CV",
     ctaContact: "Get in touch",
+    availability: "Available for work",
   },
 
   story: {
@@ -739,6 +742,7 @@ const es: Dictionary = {
     ctaProjects: "Ver proyectos",
     ctaCV: "Descargar CV",
     ctaContact: "Contactar",
+    availability: "Disponible para proyectos",
   },
 
   story: {

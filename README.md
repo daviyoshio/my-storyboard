@@ -14,7 +14,10 @@ e animações suaves.
 - **React 19** + **TypeScript**
 - **Vite 6** (build e dev server)
 - **Tailwind CSS v4** (design system via `@theme` em CSS)
-- **Framer Motion 12** (animações, scroll reveal, contadores, microinterações)
+- **Framer Motion 12** (reveal por palavra com blur, scroll-reveal, contadores, 3D card)
+- **Lenis** (smooth scroll com inércia)
+- Tipografia: **Instrument Serif** (títulos), **Geist** (corpo), **Geist Mono** (labels), **Doto** (contadores)
+- Acento **roxo** (`#7c3aed`) com gradientes no hero e no encerramento
 - Deploy: **GitHub Pages** via GitHub Actions
 
 ---

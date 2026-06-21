@@ -21,10 +21,11 @@ export function SkillsSection() {
           <Reveal
             key={group.group}
             delay={(i % 3) * 0.06}
+            blur={5}
             className="surface-card flex flex-col gap-4 rounded-panel p-6"
           >
             <div className="flex items-center gap-3">
-              <span className="text-[0.78rem] font-semibold tabular-nums text-accent">
+              <span className="font-doto text-[1rem] font-bold text-accent">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="text-[1.05rem] font-semibold text-ink">

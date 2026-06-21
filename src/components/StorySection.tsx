@@ -94,7 +94,7 @@ function ChapterBlock({
         {/* Big ghost number watermark */}
         <span
           aria-hidden
-          className="pointer-events-none absolute -top-10 right-0 select-none text-[7rem] font-bold leading-none tracking-tighter text-ink/[0.05] lg:text-[8.5rem]"
+          className="pointer-events-none absolute -top-10 right-0 select-none font-doto text-[6rem] font-bold leading-none text-accent/10 lg:text-[7.5rem]"
         >
           {index}
         </span>

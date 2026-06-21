@@ -1,6 +1,7 @@
 import { MotionConfig } from "framer-motion";
 import { LanguageProvider } from "./i18n/LanguageContext";
 import { Navbar } from "./components/Navbar";
+import { Preloader } from "./components/Preloader";
 import { ScrollProgress } from "./components/ScrollProgress";
 import { SmoothScroll } from "./components/SmoothScroll";
 import { Hero } from "./components/Hero";
@@ -11,7 +12,6 @@ import { SkillsSection } from "./components/SkillsSection";
 import { CertificatesSection } from "./components/CertificatesSection";
 import { Mindset } from "./components/Mindset";
 import { ContactSection } from "./components/ContactSection";
-import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
@@ -25,6 +25,7 @@ export default function App() {
           Ir para o conteúdo
         </a>
 
+        <Preloader />
         <SmoothScroll />
         <ScrollProgress />
         <Navbar />
@@ -39,8 +40,6 @@ export default function App() {
           <Mindset />
           <ContactSection />
         </main>
-
-        <Footer />
       </MotionConfig>
     </LanguageProvider>
   );

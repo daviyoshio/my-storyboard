@@ -18,7 +18,7 @@ export function Projects() {
 
       <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
         {projects.map((meta, i) => (
-          <Reveal key={meta.id} delay={(i % 2) * 0.08} y={32}>
+          <Reveal key={meta.id} delay={(i % 2) * 0.08} y={32} blur={6}>
             <ProjectCard meta={meta} copy={t.projects.items[meta.id]} />
           </Reveal>
         ))}
