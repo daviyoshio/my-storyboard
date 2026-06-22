@@ -76,6 +76,10 @@ export interface Dictionary {
     chapters: Record<string, ChapterCopy>;
   };
 
+  coin: {
+    eyebrow: string;
+  };
+
   impact: {
     eyebrow: string;
     title: string;
@@ -254,6 +258,10 @@ const pt: Dictionary = {
         ],
       },
     },
+  },
+
+  coin: {
+    eyebrow: "Por onde passei",
   },
 
   impact: {
@@ -538,6 +546,10 @@ const en: Dictionary = {
     },
   },
 
+  coin: {
+    eyebrow: "Where I've been",
+  },
+
   impact: {
     eyebrow: "Evidence of impact",
     title: "Results that connect business, data and technology.",
@@ -818,6 +830,10 @@ const es: Dictionary = {
         ],
       },
     },
+  },
+
+  coin: {
+    eyebrow: "Por dónde pasé",
   },
 
   impact: {

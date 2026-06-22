@@ -1,5 +1,6 @@
 import { MotionConfig } from "framer-motion";
 import { LanguageProvider } from "./i18n/LanguageContext";
+import { CoinSection } from "./components/CoinSection";
 import { Navbar } from "./components/Navbar";
 import { Preloader } from "./components/Preloader";
 import { ScrollProgress } from "./components/ScrollProgress";
@@ -33,6 +34,7 @@ export default function App() {
         <main>
           <Hero />
           <StorySection />
+          <CoinSection />
           <ImpactStats />
           <Projects />
           <SkillsSection />
